@@ -21,20 +21,13 @@ function offsetExistsTest() {
 
     foreach( $iterator as $key => $current ) {
 
-print_r('*************************************');
-print_r( $iterator->getInnerIterator() );
-
          if( ! $iterator->getInnerIterator()->offsetExists( 'new' )) {
-
-print_r('-------------- START ----------------');
-print_r( $iterator->getInnerIterator() );
 
              $iterator->getInnerIterator()->getChildren()->offsetSet( 'new', 'new text' );
 
-print_r( $iterator->getInnerIterator() );
-print_r('-------------- END ------------------');
          }
     }
+
 
 //print_r($object->getArrayCopy());
 print_r(object_to_array($object));
