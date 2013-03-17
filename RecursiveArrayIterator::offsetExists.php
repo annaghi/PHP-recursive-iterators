@@ -54,3 +54,28 @@ function object_to_array( $object ) {
     return array_map( __FUNCTION__, $object );
 }
 
+
+/*
+
+Final result
+
+Array
+(
+    [a] => Array
+        (
+            [a_1] => a 1 text
+            [a_2] => a 2 text
+            [new] => new text
+        )
+
+    [b] => Array
+        (
+            [b_1] => b 1 text
+            [b_2] => b 2 text
+            [new] => new text
+        )
+
+)
+
+*/
+
