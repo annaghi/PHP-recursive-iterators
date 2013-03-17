@@ -24,7 +24,7 @@ function offsetExistsTest() {
 print_r('*************************************');
 print_r( $iterator->getInnerIterator() );
 
-         if( mb_strlen( $key ) == 1 && ! $iterator->getInnerIterator()->offsetExists( 'new' )) {
+         if( ! $iterator->getInnerIterator()->offsetExists( 'new' )) {
 
 print_r('-------------- START ----------------');
 print_r( $iterator->getInnerIterator() );
