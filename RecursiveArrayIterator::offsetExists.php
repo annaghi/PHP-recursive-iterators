@@ -38,18 +38,18 @@ offsetExistsTest();
 
 /*
 
-Final result
+Result
 
-Array
+stdClass Object
 (
-    [a] => Array
+    [a] => stdClass Object
         (
             [a_1] => a 1 text
             [a_2] => a 2 text
             [new] => new text
         )
 
-    [b] => Array
+    [b] => stdClass Object
         (
             [new] => new text
         )
