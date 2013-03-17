@@ -16,7 +16,7 @@ function offsetExistsTest() {
     );
 
     $object   = json_decode( json_encode( $array ));
-//    $object = new ArrayObject( $array, 0, "RecursiveArrayIterator" );
+//    $object   = new ArrayObject( $array, 0, "RecursiveArrayIterator" );
     $iterator = new RecursiveIteratorIterator( new RecursiveArrayIterator( $object ), RecursiveIteratorIterator::SELF_FIRST );
 
     foreach( $iterator as $key => $current ) {
