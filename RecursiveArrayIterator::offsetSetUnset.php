@@ -46,18 +46,18 @@ print_r($object);
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-$object   = json_decode( json_encode( $array ));
+    $object   = json_decode( json_encode( $array ));
 //**    $object   = new ArrayObject( $array, 0, "RecursiveArrayIterator" );
-$iterator = new RecursiveIteratorIterator( new RecursiveArrayIterator( $object ), RecursiveIteratorIterator::CHILD_FIRST );
+    $iterator = new RecursiveIteratorIterator( new RecursiveArrayIterator( $object ), RecursiveIteratorIterator::CHILD_FIRST );
 
-foreach( $iterator as $key => $current ) {
+    foreach( $iterator as $key => $current ) {
 
-    if( mb_strlen( $key ) == 3 && ! $iterator->getInnerIterator()->offsetExists( 'new' )) {
+        if( mb_strlen( $key ) == 3 && ! $iterator->getInnerIterator()->offsetExists( 'new' )) {
 
-        $iterator->getInnerIterator()->offsetSet( 'new', 'new item' );
+            $iterator->getInnerIterator()->offsetSet( 'new', 'new item' );
 
+        }
     }
-}
 
 
 print_r($object);
@@ -67,18 +67,18 @@ print_r($object);
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-$object   = json_decode( json_encode( $array ));
+    $object   = json_decode( json_encode( $array ));
 //**    $object   = new ArrayObject( $array, 0, "RecursiveArrayIterator" );
-$iterator = new RecursiveIteratorIterator( new RecursiveArrayIterator( $object ), RecursiveIteratorIterator::CHILD_FIRST );
+    $iterator = new RecursiveIteratorIterator( new RecursiveArrayIterator( $object ), RecursiveIteratorIterator::CHILD_FIRST );
 
-foreach( $iterator as $key => $current ) {
+    foreach( $iterator as $key => $current ) {
 
-    if( mb_strlen( $key ) == 3 ) {
+        if( mb_strlen( $key ) == 3 ) {
 
-        $iterator->getInnerIterator()->offsetUnset( $key );
+            $iterator->getInnerIterator()->offsetUnset( $key );
 
+        }
     }
-}
 
 
 print_r($object);
