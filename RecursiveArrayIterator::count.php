@@ -55,9 +55,9 @@ print_r($object);
 
     foreach( $iterator as $key => $current ) {
 
-        if( $iterator->getInnerIterator()->count() == 2 ) {
+        if( $iterator->getInnerIterator()->count() == 2 || $iterator->getInnerIterator()->count() == 3 ) {
 
-            $iterator->getInnerIterator()->offsetSet( '3rd', '3rd item' );
+            $iterator->getInnerIterator()->offsetSet( 'new', 'brand new item' );
         }
     }
 
@@ -121,7 +121,7 @@ stdClass Object
         (
             [a_1] => a 1 text
             [a_2] => a 2 text
-            [3rd] => 3rd item
+            [new] => brand new item
         )
 
     [b] => stdClass Object
@@ -131,6 +131,7 @@ stdClass Object
                     [b_1_1] => b 1 1 text
                     [b_1_2] => b 1 2 text
                     [b_1_3] => b 1 3 text
+                    [new] => brand new item
                 )
 
             [b_2] => 0
