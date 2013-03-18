@@ -4,7 +4,7 @@
 
 function offsetExistsTest() {
 
-    $array_rec = array (
+    $array = array (
             'a' => new stdClass(),
 //**            'a' => array(),
             'b' => array(
@@ -22,39 +22,26 @@ function offsetExistsTest() {
     );
 
 
-    $array = array (
-            'a' => new stdClass(),
-//**            'a' => array(),
-            'b' => array(
-                    'b_1' => 'b 1 text',
-                    'b_2' => 'b 2 text',
-            ),
-    );
-
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
     $object   = json_decode( json_encode( $array ));
 //**    $object   = new ArrayObject( $array, 0, "RecursiveArrayIterator" );
-    $iterator = new RecursiveIteratorIterator( new RecursiveArrayIterator( $object ), RecursiveIteratorIterator::SELF_FIRST );
-//    $iterator = new RecursiveIteratorIterator( new RecursiveArrayIterator( $object ), RecursiveIteratorIterator::CHILD_FIRST );
-
+    $iterator = new RecursiveIteratorIterator( new RecursiveArrayIterator( $object ), RecursiveIteratorIterator::CHILD_FIRST );
 
     foreach( $iterator as $key => $current ) {
 
         if( ! $iterator->getInnerIterator()->offsetExists( 'new' )) {
 
-            $iterator->getInnerIterator()->getChildren()->offsetSet( 'new', 'new text' );
+            $iterator->getInnerIterator()->offsetSet( 'new', 'new text' );
 
         }
     }
-    
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 print_r($object);
-//**print_r($object->getArrayCopy());
 
 }
 
@@ -68,15 +55,32 @@ stdClass Object
 (
     [a] => stdClass Object
         (
-            [a_1] => a 1 text
-            [a_2] => a 2 text
-            [new] => new text
         )
 
     [b] => stdClass Object
         (
+            [b_1] => b 1 text
+            [b_2] => b 2 text
             [new] => new text
         )
+
+    [c] => stdClass Object
+        (
+            [c_1] => stdClass Object
+                (
+                )
+
+            [c_2] => stdClass Object
+                (
+                    [c_2_1] => c 2 1 text
+                    [c_2_2] => c 2 2 text
+                    [new] => new text
+                )
+
+            [new] => new text
+        )
+
+    [new] => new text
 )
 
 */
