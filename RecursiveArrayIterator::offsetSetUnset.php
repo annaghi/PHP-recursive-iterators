@@ -39,7 +39,7 @@ function offsetSetUnsetTest() {
 
     foreach( $iterator as $key => $current ) {
 
-        if( mb_strlen( $key ) == 5 && ( strpos( $key, 'b' ) === 0 )) {
+        if( in_array( $key, array( 'b_1_1', 'b_1_2', 'b_1_3', ))) {
 
             $iterator->getInnerIterator()->offsetSet( $key, 'new value' );
         }
@@ -57,7 +57,7 @@ print_r($object);
 
     foreach( $iterator as $key => $current ) {
 
-        if( mb_strlen( $key ) == 5 && ( strpos( $key, 'b' ) === 0 )) {
+        if( in_array( $key, array( 'b_1_1', 'b_1_2', 'b_1_3', ))) {
 
             $iterator->getInnerIterator()->offsetUnset( $key );
         }
