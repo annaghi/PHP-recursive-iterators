@@ -4,14 +4,36 @@
 
 function offsetExistsTest() {
 
-    $array = array (
-            'a' => array(
-                    'a_1' => 'a 1 text',
-                    'a_2' => 'a 2 text',
+    $array_rec = array (
+            'a' => new stdClass(),
+//**            'a' => array(),
+            'b' => array(
+                    'b_1' => 'b 1 text',
+                    'b_2' => 'b 2 text',
             ),
-            'b' => new stdClass(),
-//**            'b' => array(),
+            'c' => array(
+                    'c_1' => new stdClass(),
+//**                    'c_1' => array(),
+                    'c_2' => array(
+                            'c_2_1' => 'c 2 1 text',
+                            'c_2_2' => 'c 2 2 text',
+                    ),
+            ),
     );
+
+
+    $array = array (
+            'a' => new stdClass(),
+//**            'a' => array(),
+            'b' => array(
+                    'b_1' => 'b 1 text',
+                    'b_2' => 'b 2 text',
+            ),
+    );
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
     $object   = json_decode( json_encode( $array ));
 //**    $object   = new ArrayObject( $array, 0, "RecursiveArrayIterator" );
@@ -26,11 +48,13 @@ function offsetExistsTest() {
         }
     }
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 print_r($object);
-// ** print_r($object->getArrayCopy());
-}
+//**print_r($object->getArrayCopy());
 
+}
 
 offsetExistsTest();
 
