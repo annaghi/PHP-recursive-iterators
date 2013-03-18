@@ -64,8 +64,6 @@ offsetExistsTest();
 
 /*
 
-Result
-
 stdClass Object
 (
     [a] => stdClass Object
