@@ -39,7 +39,7 @@ function offsetUnsetTest() {
 
     foreach( $iterator as $key => $current ) {
 
-        if( in_array( $key, array( 'a', 'b_1_1', 'c', 'd', 'e', 'f' ))) {
+        if( in_array( $key, array( 'a_1', 'b_1_1', 'b_2', 'b_3', 'b_4', 'b_5' ))) {
 
             $iterator->getInnerIterator()->offsetUnset( $key );
         }
@@ -61,6 +61,11 @@ offsetUnsetTest();
 
 stdClass Object
 (
+    [a] => stdClass Object
+        (
+            [a_2] => a 2 text
+        )
+
     [b] => stdClass Object
         (
             [b_1] => stdClass Object
@@ -68,16 +73,16 @@ stdClass Object
                     [b_1_2] => b 1 2 text
                     [b_1_3] => b 1 3 text
                 )
+        )
 
-            [b_2] => 0
-            [b_3] => 
-            [b_4] => Array
-                (
-                )
+    [c] => 0
+    [d] => 
+    [e] => Array
+        (
+        )
 
-            [b_5] => stdClass Object
-                (
-                )
+    [f] => stdClass Object
+        (
         )
 )
 
