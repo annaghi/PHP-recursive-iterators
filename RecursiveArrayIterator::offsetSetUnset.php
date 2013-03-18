@@ -4,7 +4,7 @@
 
 function offsetSetUnsetTest() {
 
-    $array_rec = array (
+    $array = array (
             'a' => new stdClass(),
 //**            'a' => array(),
             'b' => array(
@@ -25,7 +25,7 @@ function offsetSetUnsetTest() {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-    $object   = json_decode( json_encode( $array_rec ));
+    $object   = json_decode( json_encode( $array ));
 //**    $object   = new ArrayObject( $array, 0, "RecursiveArrayIterator" );
     $iterator = new RecursiveIteratorIterator( new RecursiveArrayIterator( $object ), RecursiveIteratorIterator::CHILD_FIRST );
 
@@ -46,7 +46,7 @@ print_r($object);
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-$object   = json_decode( json_encode( $array_rec ));
+$object   = json_decode( json_encode( $array ));
 //**    $object   = new ArrayObject( $array, 0, "RecursiveArrayIterator" );
 $iterator = new RecursiveIteratorIterator( new RecursiveArrayIterator( $object ), RecursiveIteratorIterator::CHILD_FIRST );
 
@@ -67,7 +67,7 @@ print_r($object);
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-$object   = json_decode( json_encode( $array_rec ));
+$object   = json_decode( json_encode( $array ));
 //**    $object   = new ArrayObject( $array, 0, "RecursiveArrayIterator" );
 $iterator = new RecursiveIteratorIterator( new RecursiveArrayIterator( $object ), RecursiveIteratorIterator::CHILD_FIRST );
 
