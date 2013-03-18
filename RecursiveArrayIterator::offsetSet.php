@@ -51,6 +51,7 @@ print_r($object);
         if( $key == 'new') {
 
             $iterator->getInnerIterator()->offsetSet( $key, 'Hide' );
+
         }
     }
 
