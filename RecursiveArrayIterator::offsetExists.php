@@ -54,7 +54,7 @@ offsetExistsTest();
 stdClass Object
 (
     [a] => stdClass Object
-        (
+        (                                         ?????
         )
 
     [b] => stdClass Object
@@ -67,7 +67,7 @@ stdClass Object
     [c] => stdClass Object
         (
             [c_1] => stdClass Object
-                (
+                (                                 ?????
                 )
 
             [c_2] => stdClass Object
