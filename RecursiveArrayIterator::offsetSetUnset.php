@@ -52,7 +52,7 @@ $iterator = new RecursiveIteratorIterator( new RecursiveArrayIterator( $object )
 
 foreach( $iterator as $key => $current ) {
 
-    if( mb_strlen( $key ) == 3 ) {
+    if( mb_strlen( $key ) == 3 && ! $iterator->getInnerIterator()->offsetExists( 'new' )) {
 
         $iterator->getInnerIterator()->offsetSet( 'new', 'new item' );
 
