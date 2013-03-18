@@ -49,7 +49,7 @@ print_r($object);
 
         if( $iterator->getInnerIterator()->count() == 2 ) {
 
-            $iterator->getInnerIterator()->offsetSet( 'new', 'new text' );
+            $iterator->getInnerIterator()->offsetSet( 'new', '3rd item' );
 
         }
     }
@@ -115,10 +115,10 @@ stdClass Object
                 (
                     [c_2_1] => c 2 1 text
                     [c_2_2] => c 2 2 text
-                    [new] => new text
+                    [new] => 3rd item
                 )
 
-            [new] => new text
+            [new] => 3rd item
         )
 )
 
