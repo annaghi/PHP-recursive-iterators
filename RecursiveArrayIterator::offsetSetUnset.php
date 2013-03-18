@@ -52,27 +52,6 @@ print_r($object);
 
     foreach( $iterator as $key => $current ) {
 
-        if( mb_strlen( $key ) == 3 && ! $iterator->getInnerIterator()->offsetExists( 'new' )) {
-
-            $iterator->getInnerIterator()->offsetSet( 'new', 'new item' );
-
-        }
-    }
-
-
-print_r($object);
-//**print_r($object->getArrayCopy());
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-    $object   = json_decode( json_encode( $array ));
-//**    $object   = new ArrayObject( $array, 0, "RecursiveArrayIterator" );
-    $iterator = new RecursiveIteratorIterator( new RecursiveArrayIterator( $object ), RecursiveIteratorIterator::CHILD_FIRST );
-
-    foreach( $iterator as $key => $current ) {
-
         if( mb_strlen( $key ) == 3 ) {
 
             $iterator->getInnerIterator()->offsetUnset( $key );
@@ -111,37 +90,6 @@ stdClass Object
         (
             [c_1] => new value
             [c_2] => new value
-        )
-)
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-stdClass Object
-(
-    [a] => stdClass Object
-        (
-        )
-
-    [b] => stdClass Object
-        (
-            [b_1] => b 1 text
-            [b_2] => b 2 text
-            [new] => new item
-        )
-
-    [c] => stdClass Object
-        (
-            [c_1] => stdClass Object
-                (
-                )
-
-            [c_2] => stdClass Object
-                (
-                    [c_2_1] => c 2 1 text
-                    [c_2_2] => c 2 2 text
-                )
-
-            [new] => new item
         )
 )
 
