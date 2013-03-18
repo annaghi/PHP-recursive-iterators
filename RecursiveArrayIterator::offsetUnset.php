@@ -5,20 +5,28 @@
 function offsetUnsetTest() {
 
     $array = array (
-            'a' => new stdClass(),
-//**            'a' => array(),
+            'a' => array(
+                    'a_1' => 'a 1 text',
+                    'a_2' => 'a 2 text',
+            ),
+
             'b' => array(
-                    'b_1' => 'b 1 text',
-                    'b_2' => 'b 2 text',
-            ),
-            'c' => array(
-                    'c_1' => new stdClass(),
-//**                    'c_1' => array(),
-                    'c_2' => array(
-                            'c_2_1' => 'c 2 1 text',
-                            'c_2_2' => 'c 2 2 text',
+                    'b_1' => array(
+                            'b_1_1' => 'b 1 1 text',
+                            'b_1_2' => 'b 1 2 text',
+                            'b_1_3' => 'b 1 3 text',
                     ),
+
+                    'b_2' => 0,
+                    'b_3' => '',
+                    'b_4' => array(),
+                    'b_5' => new stdClass(),
             ),
+
+            'c' => 0,
+            'd' => '',
+            'e' => array(),
+            'f' => new stdClass,
     );
 
 
@@ -31,10 +39,9 @@ function offsetUnsetTest() {
 
     foreach( $iterator as $key => $current ) {
 
-        if( in_array( $key, array( 'a', 'b_1', 'c_2', ))) {
+        if( in_array( $key, array( 'a_1', 'b_1_1', 'c', 'd', 'e', 'f' ))) {
 
             $iterator->getInnerIterator()->offsetUnset( $key );
-
         }
     }
 
@@ -42,25 +49,38 @@ function offsetUnsetTest() {
 
 
 print_r($object);
-//**print_r($object->getArrayCopy());
+
 
 }
 
 offsetUnsetTest();
 
 
+
 /*
 
 stdClass Object
 (
-    [b] => stdClass Object
+    [a] => stdClass Object
         (
-            [b_2] => b 2 text
+            [a_2] => a 2 text
         )
 
-    [c] => stdClass Object
+    [b] => stdClass Object
         (
-            [c_1] => stdClass Object
+            [b_1] => stdClass Object
+                (
+                    [b_1_2] => b 1 2 text
+                    [b_1_3] => b 1 3 text
+                )
+
+            [b_2] => 0
+            [b_3] => 
+            [b_4] => Array
+                (
+                )
+
+            [b_5] => stdClass Object
                 (
                 )
         )
