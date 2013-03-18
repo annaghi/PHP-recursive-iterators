@@ -63,9 +63,7 @@ stdClass Object
             [c_1] => stdClass Object
                 (
                 )
-
         )
-
 )
 
 */
