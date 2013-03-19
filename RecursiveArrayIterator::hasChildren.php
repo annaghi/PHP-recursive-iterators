@@ -26,17 +26,17 @@ function hasChildrenTest() {
 
                     'a' => 'a first',
                     'b' => array(
-                            'b_1' => 'b_1 first',
+                            'b_1' => 'b_1 second',
                     ),
                     'c' => array(
-                            'c_1' => 'c_1 first',
-                            'c_2' => 'c_2 first',
+                            'c_1' => 'c_1 second',
+                            'c_2' => 'c_2 second',
                     ),
                     'd' => array(
                             'd_1' => array(
-                                    'd_1_1' => 'd_1_1 first',
-                                    'd_1_2' => 'd_1_2 first',
-                                    'd_1_3' => 'd_1_3 first',
+                                    'd_1_1' => 'd_1_1 second',
+                                    'd_1_2' => 'd_1_2 second',
+                                    'd_1_3' => 'd_1_3 second',
                             ),
                     ),
             ),
