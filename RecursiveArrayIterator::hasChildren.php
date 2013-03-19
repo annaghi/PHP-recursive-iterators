@@ -109,7 +109,6 @@ stdClass Object
                     [d_1_2] => LEAF
                     [d_1_3] => LEAF
                 )
-
         )
 
     [e] => stdClass Object
