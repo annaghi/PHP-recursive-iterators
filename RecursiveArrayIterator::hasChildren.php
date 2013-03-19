@@ -5,50 +5,51 @@
 function hasChildrenTest() {
 
     $array = array (
-            'a' => array(
-                    'a_1' => 'a 1 first',
-                    'a_2' => 'a 2 second',
-            ),
+
+            'a' => 'a first',
             'b' => array(
-                    'b_1' => array(
-                            'b_1_1' => 'b 1 1 first',
-                            'b_1_2' => 'b 1 2 first',
-                            'b_1_3' => 'b 1 3 first',
+                    'b_1' => 'b_1 first',
+            ),
+            'c' => array(
+                    'c_1' => 'c_1 first',
+                    'c_2' => 'c_2 first',
+            ),
+            'd' => array(
+                    'd_1' => array(
+                            'd_1_1' => 'd_1_1 first',
+                            'd_1_2' => 'd_1_2 first',
+                            'd_1_3' => 'd_1_3 first',
                     ),
+            ),
 
-                    'b_2' => 0,
-                    'b_3' => '',
-                    'b_4' => array(),
-                    'b_5' => new stdClass(),
+            'e' => array(
 
-
-                    'a' => array(
-                            'a_1' => 'a 1 second',
-                            'a_2' => 'a 2 second',
-                    ),
+                    'a' => 'a first',
                     'b' => array(
-                            'b_1' => array(
-                                    'b_1_1' => 'b 1 1 second',
-                                    'b_1_2' => 'b 1 2 second',
-                                    'b_1_3' => 'b 1 3 second',
+                            'b_1' => 'b_1 first',
+                    ),
+                    'c' => array(
+                            'c_1' => 'c_1 first',
+                            'c_2' => 'c_2 first',
+                    ),
+                    'd' => array(
+                            'd_1' => array(
+                                    'd_1_1' => 'd_1_1 first',
+                                    'd_1_2' => 'd_1_2 first',
+                                    'd_1_3' => 'd_1_3 first',
                             ),
-
-                            'b_2' => 0,
-                            'b_3' => '',
-                            'b_4' => array(),
-                            'b_5' => new stdClass(),
                     ),
             ),
     );
 
 
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
     $object   = json_decode( json_encode( $array ));
 //**    $object   = new ArrayObject( $array, 0, "RecursiveArrayIterator" );
     $iterator = new RecursiveIteratorIterator( new RecursiveArrayIterator( $object ), RecursiveIteratorIterator::CHILD_FIRST );
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
     foreach( $iterator as $key => $current ) {
@@ -67,7 +68,7 @@ print_r($object);
 
     foreach( $iterator as $key => $current ) {
 
-        if( $iterator->getInnerIterator()->hasChildren() && $iterator->getInnerIterator()->count() > 3 ) {
+        if( $iterator->getInnerIterator()->hasChildren() && $iterator->getInnerIterator()->count() == 1 ) {
 
             $iterator->getInnerIterator()->offsetSet( $key, 'NODE' );
         }
@@ -88,56 +89,51 @@ hasChildrenTest();
 
 stdClass Object
 (
-    [a] => stdClass Object
-        (
-            [a_1] => LEAF
-            [a_2] => LEAF
-        )
-
+    [a] => LEAF
     [b] => stdClass Object
         (
-            [b_1] => stdClass Object
+            [b_1] => LEAF
+        )
+
+    [c] => stdClass Object
+        (
+            [c_1] => LEAF
+            [c_2] => LEAF
+        )
+
+    [d] => stdClass Object
+        (
+            [d_1] => stdClass Object
                 (
-                    [b_1_1] => LEAF
-                    [b_1_2] => LEAF
-                    [b_1_3] => LEAF
+                    [d_1_1] => LEAF
+                    [d_1_2] => LEAF
+                    [d_1_3] => LEAF
                 )
 
-            [b_2] => LEAF
-            [b_3] => LEAF
-            [b_4] => Array
-                (
-                )
+        )
 
-            [b_5] => stdClass Object
-                (
-                )
-
-            [a] => stdClass Object
-                (
-                    [a_1] => LEAF
-                    [a_2] => LEAF
-                )
-
+    [e] => stdClass Object
+        (
+            [a] => LEAF
             [b] => stdClass Object
                 (
-                    [b_1] => stdClass Object
-                        (
-                            [b_1_1] => LEAF
-                            [b_1_2] => LEAF
-                            [b_1_3] => LEAF
-                        )
+                    [b_1] => LEAF
+                )
 
-                    [b_2] => LEAF
-                    [b_3] => LEAF
-                    [b_4] => Array
-                        (
-                        )
+            [c] => stdClass Object
+                (
+                    [c_1] => LEAF
+                    [c_2] => LEAF
+                )
 
-                    [b_5] => stdClass Object
+            [d] => stdClass Object
+                (
+                    [d_1] => stdClass Object
                         (
+                            [d_1_1] => LEAF
+                            [d_1_2] => LEAF
+                            [d_1_3] => LEAF
                         )
-
                 )
         )
 )
@@ -146,24 +142,43 @@ stdClass Object
 
 stdClass Object
 (
-    [a] => stdClass Object
-        (
-            [a_1] => LEAF
-            [a_2] => LEAF
-        )
-
+    [a] => LEAF
     [b] => stdClass Object
         (
-            [b_1] => NODE
-            [b_2] => LEAF
-            [b_3] => LEAF
-            [b_4] => NODE
-            [b_5] => NODE
-            [a] => NODE
-            [b] => NODE
+            [b_1] => LEAF
+        )
+
+    [c] => stdClass Object
+        (
+            [c_1] => LEAF
+            [c_2] => LEAF
+        )
+
+    [d] => stdClass Object
+        (
+            [d_1] => NODE
+        )
+
+    [e] => stdClass Object
+        (
+            [a] => LEAF
+            [b] => stdClass Object
+                (
+                    [b_1] => LEAF
+                )
+
+            [c] => stdClass Object
+                (
+                    [c_1] => LEAF
+                    [c_2] => LEAF
+                )
+
+            [d] => stdClass Object
+                (
+                    [d_1] => NODE
+                )
         )
 )
 
 */
-
 
