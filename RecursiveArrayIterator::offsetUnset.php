@@ -39,7 +39,6 @@ function offsetUnsetTest() {
                             'b_5' => new stdClass(),
                     ),
             ),
-
     );
 
 
