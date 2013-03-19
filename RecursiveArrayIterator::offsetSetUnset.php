@@ -42,18 +42,20 @@ function offsetSetUnsetTest() {
     );
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
     $object   = json_decode( json_encode( $array ));
 //**    $object   = new ArrayObject( $array, 0, "RecursiveArrayIterator" );
     $iterator = new RecursiveIteratorIterator( new RecursiveArrayIterator( $object ), RecursiveIteratorIterator::CHILD_FIRST );
 
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
     foreach( $iterator as $key => $current ) {
 
         if( in_array( $key, array( 'b_1_1', 'b_1_2', 'b_1_3', ))) {
 
-            $iterator->getInnerIterator()->offsetSet( $key, 'new value' );
+            $iterator->getInnerIterator()->offsetSet( $key, 'new value here' );
         }
     }
 
@@ -62,10 +64,6 @@ print_r($object);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-    $object   = json_decode( json_encode( $array ));
-//**    $object   = new ArrayObject( $array, 0, "RecursiveArrayIterator" );
-    $iterator = new RecursiveIteratorIterator( new RecursiveArrayIterator( $object ), RecursiveIteratorIterator::CHILD_FIRST );
 
     foreach( $iterator as $key => $current ) {
 
@@ -100,9 +98,9 @@ stdClass Object
         (
             [b_1] => stdClass Object
                 (
-                    [b_1_1] => new value
-                    [b_1_2] => new value
-                    [b_1_3] => new value
+                    [b_1_1] => new value here
+                    [b_1_2] => new value here
+                    [b_1_3] => new value here
                 )
 
             [b_2] => 0
@@ -125,9 +123,9 @@ stdClass Object
                 (
                     [b_1] => stdClass Object
                         (
-                            [b_1_1] => new value
-                            [b_1_2] => new value
-                            [b_1_3] => new value
+                            [b_1_1] => new value here
+                            [b_1_2] => new value here
+                            [b_1_3] => new value here
                         )
 
                     [b_2] => 0
@@ -157,7 +155,7 @@ stdClass Object
         (
             [b_1] => stdClass Object
                 (
-                    [b_1_2] => b 1 2 first
+                    [b_1_2] => new value here
                 )
 
             [b_2] => 0
@@ -180,7 +178,7 @@ stdClass Object
                 (
                     [b_1] => stdClass Object
                         (
-                            [b_1_2] => b 1 2 second
+                            [b_1_2] => new value here
                         )
 
                     [b_2] => 0
