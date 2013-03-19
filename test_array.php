@@ -6,63 +6,71 @@
 $array = array (
         'a' => '',
         'b' => 'b first',
-
         'c' => array(),
+
         'd' => array(
-                'd_01' => 'd_01 first',
+                'd_1' => 'd_1 first',
         ),
+
         'e' => array(
-                'e_01' => 'e_01 first',
-                'e_02' => 'e_02 first',
+                'e_1' => 'e_1 first',
+                'e_2' => 'e_2 first',
         ),
 
         'f' => array(
-                'f_01' => array(
-                        'f_01_01' => 'f_01_01 first',
-                        'f_01_02' => 'f_01_02 first',
-                        'f_01_03' => 'f_01_03 first',
+                'f_1' => array(
+                        'f_1_1' => 'f_1_1 first',
+                        'f_1_2' => 'f_1_2 first',
+                        'f_1_3' => 'f_1_3 first',
                 ),
+        ),
 
-                'f_02' => 0,
-                'f_03' => -1,
-                'f_04' => 1,
-                'f_05' => false,
-                'f_06' => FALSE,
-                'f_07' => true,
-                'f_08' => TRUE,
-                'f_09' => Array(),
-                'f_10' => new stdClass(),
+        'g' => array(
+                'g_1' => 0,
+                'g_2' => -1,
+                'g_3' => 1,
+                'g_4' => false,
+                'g_5' => FALSE,
+                'g_6' => true,
+                'g_7' => TRUE,
+                'g_8' => Array(),
+                'g_9' => new stdClass(),
+        ),
 
 ////////////////////////////////// AGAIN /////////////////////////////////////////////////
 
+        'h' => array(
                 'a' => '',
                 'b' => 'b second',
-
                 'c' => array(),
+
                 'd' => array(
-                        'd_01' => 'd_01 second',
+                        'd_1' => 'd_1 second',
                 ),
+
                 'e' => array(
-                        'e_01' => 'e_01 second',
-                        'e_02' => 'e_02 second',
+                        'e_1' => 'e_1 second',
+                        'e_2' => 'e_2 second',
                 ),
 
                 'f' => array(
-                        'f_01' => array(
-                                'f_01_01' => 'f_01_01 second',
-                                'f_01_02' => 'f_01_02 second',
-                                'f_01_03' => 'f_01_03 second',
+                        'f_1' => array(
+                                'f_1_1' => 'f_1_1 second',
+                                'f_1_2' => 'f_1_2 second',
+                                'f_1_3' => 'f_1_3 second',
                         ),
+                ),
 
-                        'f_02' => 0,
-                        'f_03' => -1,
-                        'f_04' => 1,
-                        'f_05' => false,
-                        'f_06' => FALSE,
-                        'f_07' => true,
-                        'f_08' => TRUE,
-                        'f_09' => Array(),
-                        'f_10' => new stdClass(),
+                'g' => array(
+                        'g_1' => 0,
+                        'g_2' => -1,
+                        'g_3' => 1,
+                        'g_4' => false,
+                        'g_5' => FALSE,
+                        'g_6' => true,
+                        'g_7' => TRUE,
+                        'g_8' => Array(),
+                        'g_9' => new stdClass(),
                 ),
         ),
 );
