@@ -53,7 +53,7 @@ function offsetExistsTest() {
 
         if( ! $iterator->getInnerIterator()->offsetExists( 'new' )) {
 
-            $iterator->getInnerIterator()->offsetSet( 'new', 'new text' );
+            $iterator->getInnerIterator()->offsetSet( 'new', 'new item with some new text' );
         }
     }
 
