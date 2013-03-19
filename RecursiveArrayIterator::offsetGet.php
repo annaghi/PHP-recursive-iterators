@@ -5,38 +5,39 @@
 function offsetGetTest() {
 
     $array = array (
-            'a' => array(
-                    'a_1' => 'a 1 first',
-                    'a_2' => 'a 2 first',
-            ),
+
+            'a' => 'a first',
             'b' => array(
-                    'b_1' => array(
-                            'b_1_1' => 'b 1 1 first',
-                            'b_1_2' => 'b 1 2 first',
-                            'b_1_3' => 'b 1 3 first',
+                    'b_1' => 'b_1 first',
+            ),
+            'c' => array(
+                    'c_1' => 'c_1 first',
+                    'c_2' => 'c_2 first',
+            ),
+            'd' => array(
+                    'd_1' => array(
+                            'd_1_1' => 'd_1_1 first',
+                            'd_1_2' => 'd_1_2 first',
+                            'd_1_3' => 'd_1_3 first',
                     ),
+            ),
 
-                    'b_2' => 0,
-                    'b_3' => '',
-                    'b_4' => array(),
-                    'b_5' => new stdClass(),
+            'e' => array(
 
-
-                    'a' => array(
-                            'a_1' => 'a 1 second',
-                            'a_2' => 'a 2 second',
-                    ),
+                    'a' => 'a first',
                     'b' => array(
-                            'b_1' => array(
-                                    'b_1_1' => 'b 1 1 second',
-                                    'b_1_2' => 'b 1 2 second',
-                                    'b_1_3' => 'b 1 3 second',
+                            'b_1' => 'b_1 second',
+                    ),
+                    'c' => array(
+                            'c_1' => 'c_1 second',
+                            'c_2' => 'c_2 second',
+                    ),
+                    'd' => array(
+                            'd_1' => array(
+                                    'd_1_1' => 'd_1_1 second',
+                                    'd_1_2' => 'd_1_2 second',
+                                    'd_1_3' => 'd_1_3 second',
                             ),
-
-                            'b_2' => 0,
-                            'b_3' => '',
-                            'b_4' => array(),
-                            'b_5' => new stdClass(),
                     ),
             ),
     );
@@ -55,14 +56,13 @@ function offsetGetTest() {
 
     foreach( $iterator as $key => $current ) {
 
-        if( $key == 'a_1' ) {
+        if( $key == 'b_1' ) {
 
             $value = $iterator->getInnerIterator()->offsetGet( $key );
-            
             $iterator->getInnerIterator()->offsetUnset( $key );
         }
 
-        if( $key == 'b_1_3' ) {
+        if( $key == 'd_1_3' ) {
 
             $iterator->getInnerIterator()->offsetSet( $key, $value );
         }
@@ -83,52 +83,47 @@ offsetGetTest();
 
 stdClass Object
 (
-    [a] => stdClass Object
-        (
-            [a_2] => a 2 first
-        )
-
+    [a] => a first
     [b] => stdClass Object
         (
-            [b_1] => stdClass Object
-                (
-                    [b_1_1] => b 1 1 first
-                    [b_1_2] => b 1 2 first
-                    [b_1_3] => a 1 first
-                )
+        )
 
-            [b_2] => 0
-            [b_3] => 
-            [b_4] => Array
-                (
-                )
+    [c] => stdClass Object
+        (
+            [c_1] => c_1 first
+            [c_2] => c_2 first
+        )
 
-            [b_5] => stdClass Object
+    [d] => stdClass Object
+        (
+            [d_1] => stdClass Object
                 (
+                    [d_1_1] => d_1_1 first
+                    [d_1_2] => d_1_2 first
+                    [d_1_3] => b_1 first
                 )
+        )
 
-            [a] => stdClass Object
-                (
-                    [a_2] => a 2 second
-                )
-
+    [e] => stdClass Object
+        (
+            [a] => a first
             [b] => stdClass Object
                 (
-                    [b_1] => stdClass Object
-                        (
-                            [b_1_1] => b 1 1 second
-                            [b_1_2] => b 1 2 second
-                            [b_1_3] => a 1 second
-                        )
+                )
 
-                    [b_2] => 0
-                    [b_3] => 
-                    [b_4] => Array
-                        (
-                        )
+            [c] => stdClass Object
+                (
+                    [c_1] => c_1 second
+                    [c_2] => c_2 second
+                )
 
-                    [b_5] => stdClass Object
+            [d] => stdClass Object
+                (
+                    [d_1] => stdClass Object
                         (
+                            [d_1_1] => d_1_1 second
+                            [d_1_2] => d_1_2 second
+                            [d_1_3] => b_1 second
                         )
                 )
         )
