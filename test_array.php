@@ -4,7 +4,6 @@
 
 
 $array = array (
-
         'a' => '',
         'b' => 'b first',
         'c' => array(),
@@ -21,8 +20,11 @@ $array = array (
         'f' => array(
                 'f_1' => array(
                         'f_1_1' => 'f_1_1 first',
-                        'f_1_2' => 'f_1_2 first',
-                        'f_1_3' => 'f_1_3 first',
+
+                ),
+                'f_2' => array(
+                        'f_2_1' => 'f_2_1 first',
+                        'f_2_2' => 'f_2_2 first',
                 ),
         ),
 
@@ -41,7 +43,6 @@ $array = array (
 ////////////////////////////////// AGAIN /////////////////////////////////////////////////
 
         'h' => array(
-        
                 'a' => '',
                 'b' => 'b second',
                 'c' => array(),
@@ -58,8 +59,10 @@ $array = array (
                 'f' => array(
                         'f_1' => array(
                                 'f_1_1' => 'f_1_1 second',
-                                'f_1_2' => 'f_1_2 second',
-                                'f_1_3' => 'f_1_3 second',
+                        ),
+                        'f_2' => array(
+                                'f_2_1' => 'f_2_1 second',
+                                'f_2_2' => 'f_2_2 second',
                         ),
                 ),
 
