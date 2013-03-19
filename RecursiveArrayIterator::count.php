@@ -15,7 +15,7 @@ function countTest() {
                     'c_2' => 'c_2 first',
             ),
             'd' => array(
-                    'd_1' => array(),
+                    'd_1' => new stdClass(),
             ),
 
             'e' => array(
@@ -95,14 +95,14 @@ stdClass Object
 
     [d] => stdClass Object
         (
-            [d_1] => Array
+            [d_1] => stdClass Object
                 (
                 )
         )
 
     [e] => stdClass Object
         (
-            [a] => a second
+            [a] => a first
             [b] => stdClass Object
                 (
                     [b_1] => b_1 second
@@ -137,19 +137,19 @@ stdClass Object
         (
             [c_1] => c_1 first
             [c_2] => c_2 first
-            [new] => brand new leaf with brand new text
+            [new] => brand new item with brand new text
         )
 
     [d] => stdClass Object
         (
-            [d_1] => Array
+            [d_1] => stdClass Object
                 (
                 )
         )
 
     [e] => stdClass Object
         (
-            [a] => a second
+            [a] => a first
             [b] => stdClass Object
                 (
                     [b_1] => b_1 second
@@ -159,7 +159,7 @@ stdClass Object
                 (
                     [c_1] => c_1 second
                     [c_2] => c_2 second
-                    [new] => brand new leaf with brand new text
+                    [new] => brand new item with brand new text
                 )
 
             [d] => stdClass Object
