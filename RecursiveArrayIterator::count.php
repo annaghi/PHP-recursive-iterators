@@ -69,7 +69,7 @@ print_r($object);
 
         if( $iterator->getInnerIterator()->count() == 3 ) {
 
-            $iterator->getInnerIterator()->offsetSet( 'new', 'brand new item with brand new text' );
+            $iterator->getInnerIterator()->offsetSet( 'new', 'brand new text' );
         }
     }
 
@@ -158,7 +158,7 @@ stdClass Object
                     [b_1_1] => b 1 1 first
                     [b_1_2] => b 1 2 first
                     [b_1_3] => b 1 3 first
-                    [new] => brand new item with brand new text
+                    [new] => brand new text
                 )
 
             [b_2] => 0
@@ -184,7 +184,7 @@ stdClass Object
                             [b_1_1] => b 1 1 second
                             [b_1_2] => b 1 2 second
                             [b_1_3] => b 1 3 second
-                            [new] => brand new item with brand new text
+                            [new] => brand new text
                         )
 
                     [b_2] => 0
