@@ -6,27 +6,39 @@ function offsetSetUnsetTest() {
 
     $array = array (
             'a' => array(
-                    'a_1' => 'a 1 text',
-                    'a_2' => 'a 2 text',
+                    'a_1' => 'a 1 first',
+                    'a_2' => 'a 2 first',
             ),
-
             'b' => array(
                     'b_1' => array(
-                            'b_1_1' => 'b 1 1 text',
-                            'b_1_2' => 'b 1 2 text',
-                            'b_1_3' => 'b 1 3 text',
+                            'b_1_1' => 'b 1 1 first',
+                            'b_1_2' => 'b 1 2 first',
+                            'b_1_3' => 'b 1 3 first',
                     ),
 
                     'b_2' => 0,
                     'b_3' => '',
                     'b_4' => array(),
                     'b_5' => new stdClass(),
-            ),
 
-            'c' => 0,
-            'd' => '',
-            'e' => array(),
-            'f' => new stdClass,
+
+                    'a' => array(
+                            'a_1' => 'a 1 second',
+                            'a_2' => 'a 2 second',
+                    ),
+                    'b' => array(
+                            'b_1' => array(
+                                    'b_1_1' => 'b 1 1 second',
+                                    'b_1_2' => 'b 1 2 second',
+                                    'b_1_3' => 'b 1 3 second',
+                            ),
+
+                            'b_2' => 0,
+                            'b_3' => '',
+                            'b_4' => array(),
+                            'b_5' => new stdClass(),
+                    ),
+            ),
     );
 
 
@@ -80,8 +92,8 @@ stdClass Object
 (
     [a] => stdClass Object
         (
-            [a_1] => a 1 text
-            [a_2] => a 2 text
+            [a_1] => a 1 first
+            [a_2] => a 2 first
         )
 
     [b] => stdClass Object
@@ -102,16 +114,32 @@ stdClass Object
             [b_5] => stdClass Object
                 (
                 )
-        )
 
-    [c] => 0
-    [d] => 
-    [e] => Array
-        (
-        )
+            [a] => stdClass Object
+                (
+                    [a_1] => a 1 second
+                    [a_2] => a 2 second
+                )
 
-    [f] => stdClass Object
-        (
+            [b] => stdClass Object
+                (
+                    [b_1] => stdClass Object
+                        (
+                            [b_1_1] => new value
+                            [b_1_2] => new value
+                            [b_1_3] => new value
+                        )
+
+                    [b_2] => 0
+                    [b_3] => 
+                    [b_4] => Array
+                        (
+                        )
+
+                    [b_5] => stdClass Object
+                        (
+                        )
+                )
         )
 )
 
@@ -121,15 +149,15 @@ stdClass Object
 (
     [a] => stdClass Object
         (
-            [a_1] => a 1 text
-            [a_2] => a 2 text
+            [a_1] => a 1 first
+            [a_2] => a 2 first
         )
 
     [b] => stdClass Object
         (
             [b_1] => stdClass Object
                 (
-                    [b_1_2] => b 1 2 text
+                    [b_1_2] => b 1 2 first
                 )
 
             [b_2] => 0
@@ -141,16 +169,30 @@ stdClass Object
             [b_5] => stdClass Object
                 (
                 )
-        )
 
-    [c] => 0
-    [d] => 
-    [e] => Array
-        (
-        )
+            [a] => stdClass Object
+                (
+                    [a_1] => a 1 second
+                    [a_2] => a 2 second
+                )
 
-    [f] => stdClass Object
-        (
+            [b] => stdClass Object
+                (
+                    [b_1] => stdClass Object
+                        (
+                            [b_1_2] => b 1 2 second
+                        )
+
+                    [b_2] => 0
+                    [b_3] => 
+                    [b_4] => Array
+                        (
+                        )
+
+                    [b_5] => stdClass Object
+                        (
+                        )
+                )
         )
 )
 
