@@ -69,7 +69,7 @@ print_r($object);
 
         if( $iterator->getInnerIterator()->hasChildren() && $iterator->getInnerIterator()->count() > 3 ) {
 
-            $iterator->getInnerIterator()->offsetSet( $key, 'NODE' );
+            $iterator->getInnerIterator()->offsetSet( $key, 'ex-NODE' );
         }
     }
 
@@ -154,13 +154,13 @@ stdClass Object
 
     [b] => stdClass Object
         (
-            [b_1] => NODE
+            [b_1] => ex-NODE
             [b_2] => LEAF
             [b_3] => LEAF
-            [b_4] => NODE
-            [b_5] => NODE
-            [a] => NODE
-            [b] => NODE
+            [b_4] => ex-NODE
+            [b_5] => ex-NODE
+            [a] => ex-NODE
+            [b] => ex-NODE
         )
 )
 
