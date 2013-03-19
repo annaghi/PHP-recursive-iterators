@@ -20,7 +20,7 @@ function countTest() {
 
             'e' => array(
 
-                    'a' => 'a first',
+                    'a' => 'a second',
                     'b' => array(
                             'b_1' => 'b_1 second',
                     ),
@@ -102,7 +102,7 @@ stdClass Object
 
     [e] => stdClass Object
         (
-            [a] => a first
+            [a] => a second
             [b] => stdClass Object
                 (
                     [b_1] => b_1 second
@@ -149,7 +149,7 @@ stdClass Object
 
     [e] => stdClass Object
         (
-            [a] => a first
+            [a] => a second
             [b] => stdClass Object
                 (
                     [b_1] => b_1 second
