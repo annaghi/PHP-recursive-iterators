@@ -48,7 +48,7 @@ function countTest() {
 
         if( $iterator->getInnerIterator()->count() == 0 ) {
 
-            $iterator->getInnerIterator()->offsetSet( 'not_empty', 'this value is not empty anymore' );
+            $iterator->getInnerIterator()->offsetSet( 'not_empty', 'this item is not empty anymore' );
         }
     }
 
@@ -62,7 +62,7 @@ print_r($object);
 
         if( $iterator->getInnerIterator()->count() == 2 ) {
 
-            $iterator->getInnerIterator()->offsetSet( 'new', 'brand new item with brand new text' );
+            $iterator->getInnerIterator()->offsetSet( 'new', 'brand new leaf with brand new text' );
         }
     }
 
@@ -137,7 +137,7 @@ stdClass Object
         (
             [c_1] => c_1 first
             [c_2] => c_2 first
-            [new] => brand new item with brand new text
+            [new] => brand new leaf with brand new text
         )
 
     [d] => stdClass Object
@@ -159,7 +159,7 @@ stdClass Object
                 (
                     [c_1] => c_1 second
                     [c_2] => c_2 second
-                    [new] => brand new item with brand new text
+                    [new] => brand new leaf with brand new text
                 )
 
             [d] => stdClass Object
