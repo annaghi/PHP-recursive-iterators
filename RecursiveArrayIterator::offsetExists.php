@@ -55,7 +55,7 @@ function offsetExistsTest() {
 
         if( ! $iterator->getInnerIterator()->offsetExists( 'new' )) {
 
-            $iterator->getInnerIterator()->offsetSet( 'new', 'new item with some new text' );
+            $iterator->getInnerIterator()->offsetSet( 'new', 'new leaf with some new text' );
         }
     }
 
@@ -78,7 +78,7 @@ stdClass Object
         (
             [a_1] => a 1 first
             [a_2] => a 2 first
-            [new] => new item with some new text
+            [new] => new leaf with some new text
         )
 
     [b] => stdClass Object
@@ -88,7 +88,7 @@ stdClass Object
                     [b_1_1] => b 1 1 first
                     [b_1_2] => b 1 2 first
                     [b_1_3] => b 1 3 first
-                    [new] => new item with some new text
+                    [new] => new leaf with some new text
                 )
 
             [b_2] => 0
@@ -105,7 +105,7 @@ stdClass Object
                 (
                     [a_1] => a 1 second
                     [a_2] => a 2 second
-                    [new] => new item with some new text
+                    [new] => new leaf with some new text
                 )
 
             [b] => stdClass Object
@@ -115,7 +115,7 @@ stdClass Object
                             [b_1_1] => b 1 1 second
                             [b_1_2] => b 1 2 second
                             [b_1_3] => b 1 3 second
-                            [new] => new item with some new text
+                            [new] => new leaf with some new text
                         )
 
                     [b_2] => 0
@@ -128,13 +128,13 @@ stdClass Object
                         (
                         )
 
-                    [new] => new item with some new text
+                    [new] => new leaf with some new text
                 )
 
-            [new] => new item with some new text
+            [new] => new leaf with some new text
         )
 
-    [new] => new item with some new text
+    [new] => new leaf with some new text
 )
 
 */
