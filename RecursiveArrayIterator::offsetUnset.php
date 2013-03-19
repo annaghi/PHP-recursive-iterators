@@ -65,7 +65,6 @@ function offsetUnsetTest() {
 
 print_r($object);
 
-
 }
 
 offsetUnsetTest();
