@@ -3,61 +3,67 @@
 /* A very detailed array could be used to test the behavior of the recursive methods
 
 
-    $array = array (
-            'a' => array(
-                    'a_01' => 'a_01 first',
-            ),
-            'b' => array(
-                    'b_01' => 'b_01 first',
-                    'b_02' => 'b_02 first',
-            ),
-            'c' => array(
-                    'c_01' => array(
-                            'c_01_01' => 'c_01_01 first',
-                            'c_01_02' => 'c_01_02 first',
-                            'c_01_03' => 'c_01_03 first',
-                    ),
+$array = array (
+        'a' => '',
+        'b' => 'b first',
 
-                    'c_02' => 0,
-                    'c_03' => -1,
-                    'c_04' => 1,
-                    'c_05' => '',
-                    'c_06' => false,
-                    'c_07' => FALSE,
-                    'c_08' => true,
-                    'c_09' => TRUE,
-                    'c_10' => array(),
-                    'c_11' => Array(),
-                    'c_12' => new stdClass(),
+        'c' => array(),
+        'd' => array(
+                'd_01' => 'd_01 first',
+        ),
+        'e' => array(
+                'e_01' => 'e_01 first',
+                'e_02' => 'e_02 first',
+        ),
+
+        'f' => array(
+                'f_01' => array(
+                        'f_01_01' => 'f_01_01 first',
+                        'f_01_02' => 'f_01_02 first',
+                        'f_01_03' => 'f_01_03 first',
+                ),
+
+                'f_02' => 0,
+                'f_03' => -1,
+                'f_04' => 1,
+                'f_05' => false,
+                'f_06' => FALSE,
+                'f_07' => true,
+                'f_08' => TRUE,
+                'f_09' => Array(),
+                'f_10' => new stdClass(),
 
 ////////////////////////////////// AGAIN /////////////////////////////////////////////////
 
-                    'a' => array(
-                            'a_01' => 'a_01 second',
-                    ),
-                    'b' => array(
-                            'b_01' => 'b_01 second',
-                            'b_02' => 'b_02 second',
-                    ),
-                    'c' => array(
-                            'c_01' => array(
-                                    'c_01_01' => 'c_01_01 second',
-                                    'c_01_02' => 'c_01_02 second',
-                                    'c_01_03' => 'c_01_03 second',
-                            ),
+                'a' => '',
+                'b' => 'b second',
 
-                            'c_02' => 0,
-                            'c_03' => -1,
-                            'c_04' => 1,
-                            'c_05' => '',
-                            'c_06' => false,
-                            'c_07' => FALSE,
-                            'c_08' => true,
-                            'c_09' => TRUE,
-                            'c_10' => array(),
-                            'c_11' => Array(),
-                            'c_12' => new stdClass(),
-                    ),
-            ),
-    );
+                'c' => array(),
+                'd' => array(
+                        'd_01' => 'd_01 second',
+                ),
+                'e' => array(
+                        'e_01' => 'e_01 second',
+                        'e_02' => 'e_02 second',
+                ),
+
+                'f' => array(
+                        'f_01' => array(
+                                'f_01_01' => 'f_01_01 second',
+                                'f_01_02' => 'f_01_02 second',
+                                'f_01_03' => 'f_01_03 second',
+                        ),
+
+                        'f_02' => 0,
+                        'f_03' => -1,
+                        'f_04' => 1,
+                        'f_05' => false,
+                        'f_06' => FALSE,
+                        'f_07' => true,
+                        'f_08' => TRUE,
+                        'f_09' => Array(),
+                        'f_10' => new stdClass(),
+                ),
+        ),
+);
 
