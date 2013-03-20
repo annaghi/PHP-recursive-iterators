@@ -40,7 +40,7 @@ function getSubIteratorTest() {
 
         for( $i = 0; $i < $iterator->getDepth(); $i++ ) {
 
-            $path .= $iterator->getSubIterator($i)->key() . '/';
+            $path .= $iterator->getSubIterator($i)->key() . '  ';
         }
 
         $path .= $key . PHP_EOL;
@@ -64,21 +64,19 @@ a
 
 b
 
-b/b_1
+b  b_1
 
-b/b_2
+b  b_2
 
 c
 
-c/c_1
+c  c_1
 
-c/c_1/c_1_1
+c  c_1  c_1_1
 
-c/c_2
+c  c_2
 
-c/c_2/c_2_1
+c  c_2  c_2_1
 
-c/c_2/c_2_2
-
-*/
+c  c_2  c_2_2
 
