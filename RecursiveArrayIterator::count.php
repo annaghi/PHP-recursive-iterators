@@ -50,7 +50,7 @@ print_r($object);
 
     foreach( $iterator as $key => $current ) {
 
-        if( $iterator->getInnerIterator()->count() == 2 ) {
+        if( $iterator->getInnerIterator()->count() == 1 ) {
 
             $iterator->getInnerIterator()->offsetSet( 'new', 'brand new leaf with brand new text' );
         }
