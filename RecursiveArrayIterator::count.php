@@ -14,7 +14,7 @@ function countTest() {
             ),
 
             'c' => array(
-                    'c_1' => 'c_1' => new stdClass(),
+                    'c_1' => new stdClass(),
                     'c_2' => array(
                             'c_2_1' => 'c_2_1 text',
                             'c_2_2' => 'c_2_2 text',
