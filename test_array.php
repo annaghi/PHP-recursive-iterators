@@ -38,8 +38,10 @@ $array = array (
                 'g_07' => FALSE,
                 'g_08' => true,
                 'g_09' => TRUE,
-                'g_10' => Array(),
-                'g_11' => new stdClass(),
+                'g_10' => null,
+                'g_11' => NULL,
+                'g_12' => Array(),
+                'g_13' => new stdClass(),
         ),
 
         'h' => array(
@@ -87,8 +89,10 @@ $array = array (
                         'g_07' => FALSE,
                         'g_08' => true,
                         'g_09' => TRUE,
-                        'g_10' => Array(),
-                        'g_11' => new stdClass(),
+                        'g_10' => null,
+                        'g_11' => NULL,
+                        'g_12' => Array(),
+                        'g_13' => new stdClass(),
                 ),
 
                 'h' => array(
