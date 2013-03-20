@@ -34,23 +34,23 @@ function getSubIteratorTest() {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-    $path = '';
+    $tree = '';
 
     foreach( $iterator as $key => $current ) {
 
-        for( $i = 0; $i < $iterator->getDepth(); $i++ ) {
+        for( $i = 0; $i <= $iterator->getDepth(); $i++ ) {
 
-            $path .= $iterator->getSubIterator($i)->key() . '  ';
+            $tree .= $iterator->getSubIterator($i)->key() . '  ';
         }
 
-        $path .= $key . PHP_EOL;
+        $tree .= PHP_EOL;
     }
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-print_r($path);
+print_r($tree);
 
 }
 
