@@ -58,7 +58,7 @@ getSubIteratorTest();
 
 
 
-/*
+/* Result
 
 a
 
