@@ -61,7 +61,7 @@ offsetGetTest();
 
 
 
-/*
+/* Result
 
 stdClass Object
 (
@@ -85,6 +85,4 @@ stdClass Object
                 )
         )
 )
-
-*/
 
