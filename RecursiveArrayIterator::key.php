@@ -1,8 +1,8 @@
 <?php
 
-//A simple use case of RecursiveIteratorIterator::getSubIterator method
+//A simple use case of RecursiveArrayIterator::key method
 
-function getSubIteratorTest() {
+function keyTest() {
 
     $array = array (
 
@@ -55,7 +55,7 @@ print_r($tree);
 
 }
 
-getSubIteratorTest();
+keyTest();
 
 
 
