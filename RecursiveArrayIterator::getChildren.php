@@ -40,9 +40,9 @@ function getChildrenTest() {
 
         if( $iterator->getInnerIterator()->hasChildren() && $iterator->getInnerIterator()->getChildren()->count() == 3 ) {
 
-            foreach( $iterator->getInnerIterator()->getChildren() as $child_key => $value ) {
+            foreach( $iterator->getInnerIterator()->getChildren() as $key => $value ) {
 
-                $iterator->getInnerIterator()->getChildren()->offsetSet( $child_key, 'trilling' );
+                $iterator->getInnerIterator()->getChildren()->offsetSet( $key, 'trilling' );
             }
         }
     }
