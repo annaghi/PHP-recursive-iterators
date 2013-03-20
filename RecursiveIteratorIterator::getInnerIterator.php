@@ -39,6 +39,7 @@ function getInnerIteratorTest() {
 
         if( $iterator->getInnerIterator()->count() == 2 ) {
 
+print_r($key);
 print_r($iterator->getInnerIterator());
 
         }
@@ -54,6 +55,7 @@ print_r('-----------------------------------------------------------------------
 
         if( $iterator->getInnerIterator()->count() == 2 ) {
 
+print_r($key);
 print_r($iterator->getInnerIterator());
 
         }
@@ -70,6 +72,7 @@ getInnerIteratorTest();
 
 /*
 
+b_1
 RecursiveArrayIterator Object
 (
     [storage:ArrayIterator:private] => stdClass Object
@@ -80,6 +83,7 @@ RecursiveArrayIterator Object
 )
 
 
+b_2
 RecursiveArrayIterator Object
 (
     [storage:ArrayIterator:private] => stdClass Object
@@ -90,6 +94,7 @@ RecursiveArrayIterator Object
 )
 
 
+c_2_1
 RecursiveArrayIterator Object
 (
     [storage:ArrayIterator:private] => stdClass Object
@@ -100,6 +105,7 @@ RecursiveArrayIterator Object
 )
 
 
+c_2_2
 RecursiveArrayIterator Object
 (
     [storage:ArrayIterator:private] => stdClass Object
@@ -111,6 +117,7 @@ RecursiveArrayIterator Object
 
 --------------------------------------------------------------------------------------------------------------------------------
 
+b_1
 RecursiveArrayIterator Object
 (
     [storage:ArrayIterator:private] => stdClass Object
@@ -121,6 +128,7 @@ RecursiveArrayIterator Object
 )
 
 
+b_2
 RecursiveArrayIterator Object
 (
     [storage:ArrayIterator:private] => stdClass Object
@@ -131,6 +139,7 @@ RecursiveArrayIterator Object
 )
 
 
+c_1
 RecursiveArrayIterator Object
 (
     [storage:ArrayIterator:private] => stdClass Object
@@ -149,6 +158,7 @@ RecursiveArrayIterator Object
 )
 
 
+c_2
 RecursiveArrayIterator Object
 (
     [storage:ArrayIterator:private] => stdClass Object
@@ -167,6 +177,7 @@ RecursiveArrayIterator Object
 )
 
 
+c_2_1
 RecursiveArrayIterator Object
 (
     [storage:ArrayIterator:private] => stdClass Object
@@ -177,6 +188,7 @@ RecursiveArrayIterator Object
 )
 
 
+c_2_2
 RecursiveArrayIterator Object
 (
     [storage:ArrayIterator:private] => stdClass Object
