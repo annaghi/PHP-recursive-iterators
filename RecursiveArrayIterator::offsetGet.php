@@ -41,6 +41,7 @@ function offsetGetTest() {
         if( $key == 'a' ) {
 
             $value = $iterator->getInnerIterator()->offsetGet( $key );
+            
             $iterator->getInnerIterator()->offsetUnset( $key );
         }
 
