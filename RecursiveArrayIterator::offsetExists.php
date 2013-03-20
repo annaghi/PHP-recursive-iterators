@@ -53,7 +53,7 @@ offsetExistsTest();
 
 
 
-/*
+/* Result
 
 stdClass Object
 (
@@ -85,6 +85,4 @@ stdClass Object
 
     [new] => new leaf with some new text
 )
-
-*/
 
