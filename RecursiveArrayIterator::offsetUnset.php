@@ -54,7 +54,7 @@ offsetUnsetTest();
 
 
 
-/*
+/* Result
 
 stdClass Object
 (
@@ -73,6 +73,4 @@ stdClass Object
                 )
         )
 )
-
-*/
 
