@@ -30,6 +30,7 @@ function hasChildrenTest() {
 //**    $object   = new ArrayObject( $array, 0, "RecursiveArrayIterator" );
     $iterator = new RecursiveIteratorIterator( new RecursiveArrayIterator( $object ), RecursiveIteratorIterator::CHILD_FIRST );
 
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
