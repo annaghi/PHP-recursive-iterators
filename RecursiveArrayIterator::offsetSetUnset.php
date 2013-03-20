@@ -4,40 +4,22 @@
 
 function offsetSetUnsetTest() {
 
-     $array = array (
+    $array = array (
 
-            'a' => 'a first',
+            'a' => 'a text',
+
             'b' => array(
-                    'b_1' => 'b_1 first',
+                    'b_1' => 'b_1 text',
+                    'b_2' => 'b_2 text',
             ),
+
             'c' => array(
-                    'c_1' => 'c_1 first',
-                    'c_2' => 'c_2 first',
-            ),
-            'd' => array(
-                    'd_1' => array(
-                            'd_1_1' => 'd_1_1 first',
-                            'd_1_2' => 'd_1_2 first',
-                            'd_1_3' => 'd_1_3 first',
+                    'c_1' => array(
+                            'c_1_1' => 'c_1_1 text',
                     ),
-            ),
-
-            'e' => array(
-
-                    'a' => 'a second',
-                    'b' => array(
-                            'b_1' => 'b_1 second',
-                    ),
-                    'c' => array(
-                            'c_1' => 'c_1 second',
-                            'c_2' => 'c_2 second',
-                    ),
-                    'd' => array(
-                            'd_1' => array(
-                                    'd_1_1' => 'd_1_1 second',
-                                    'd_1_2' => 'd_1_2 second',
-                                    'd_1_3' => 'd_1_3 second',
-                            ),
+                    'c_2' => array(
+                            'c_2_1' => 'c_2_1 text',
+                            'c_2_2' => 'c_2_2 text',
                     ),
             ),
     );
@@ -54,7 +36,7 @@ function offsetSetUnsetTest() {
 
     foreach( $iterator as $key => $current ) {
 
-        if( in_array( $key, array( 'd_1_1', 'd_1_2', 'd_1_3', ))) {
+        if( in_array( $key, array( 'b_1', 'b_2', 'c_1', ))) {
 
             $iterator->getInnerIterator()->offsetSet( $key, 'new value here' );
         }
@@ -68,7 +50,7 @@ print_r($object);
 
     foreach( $iterator as $key => $current ) {
 
-        if( in_array( $key, array( 'd_1_1', 'd_1_2', 'd_1_3', ))) {
+        if( in_array( $key, array( 'b_1', 'b_2', 'c_1', ))) {
 
             $iterator->getInnerIterator()->offsetUnset( $key );
         }
@@ -89,50 +71,20 @@ offsetSetUnsetTest();
 
 stdClass Object
 (
-    [a] => a first
+    [a] => a text
     [b] => stdClass Object
         (
-            [b_1] => b_1 first
+            [b_1] => new value here
+            [b_2] => new value here
         )
 
     [c] => stdClass Object
         (
-            [c_1] => c_1 first
-            [c_2] => c_2 first
-        )
-
-    [d] => stdClass Object
-        (
-            [d_1] => stdClass Object
+            [c_1] => new value here
+            [c_2] => stdClass Object
                 (
-                    [d_1_1] => new value here
-                    [d_1_2] => new value here
-                    [d_1_3] => new value here
-                )
-        )
-
-    [e] => stdClass Object
-        (
-            [a] => a second
-            [b] => stdClass Object
-                (
-                    [b_1] => b_1 second
-                )
-
-            [c] => stdClass Object
-                (
-                    [c_1] => c_1 second
-                    [c_2] => c_2 second
-                )
-
-            [d] => stdClass Object
-                (
-                    [d_1] => stdClass Object
-                        (
-                            [d_1_1] => new value here
-                            [d_1_2] => new value here
-                            [d_1_3] => new value here
-                        )
+                    [c_2_1] => c_2_1 text
+                    [c_2_2] => c_2_2 text
                 )
         )
 )
@@ -141,46 +93,18 @@ stdClass Object
 
 stdClass Object
 (
-    [a] => a first
+    [a] => a text
     [b] => stdClass Object
         (
-            [b_1] => b_1 first
+            [b_2] => new value here
         )
 
     [c] => stdClass Object
         (
-            [c_1] => c_1 first
-            [c_2] => c_2 first
-        )
-
-    [d] => stdClass Object
-        (
-            [d_1] => stdClass Object
+            [c_2] => stdClass Object
                 (
-                    [d_1_2] => new value here
-                )
-        )
-
-    [e] => stdClass Object
-        (
-            [a] => a second
-            [b] => stdClass Object
-                (
-                    [b_1] => b_1 second
-                )
-
-            [c] => stdClass Object
-                (
-                    [c_1] => c_1 second
-                    [c_2] => c_2 second
-                )
-
-            [d] => stdClass Object
-                (
-                    [d_1] => stdClass Object
-                        (
-                            [d_1_2] => new value here
-                        )
+                    [c_2_1] => c_2_1 text
+                    [c_2_2] => c_2_2 text
                 )
         )
 )
