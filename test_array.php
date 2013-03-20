@@ -1,6 +1,6 @@
 <?php
 
-/* A very detailed array could be used to test the behavior of the recursive methods
+/* array for testing the recursive methods
 
 
 $array = array (
