@@ -4,11 +4,9 @@
 
 
 $array = array (
-
         'a' => '',
-        'b' => array(),
-        
-        'c' => 'c first',
+        'b' => 'b first',
+        'c' => array(),
 
         'd' => array(
                 'd_1' => 'd_1 first',
@@ -31,25 +29,34 @@ $array = array (
         ),
 
         'g' => array(
-                'g_1' => 0,
-                'g_2' => -1,
-                'g_3' => 1,
-                'g_4' => false,
-                'g_5' => FALSE,
-                'g_6' => true,
-                'g_7' => TRUE,
-                'g_8' => Array(),
-                'g_9' => new stdClass(),
+                'g_01' => 0,
+                'g_02' => -1,
+                'g_03' => 1,
+                'g_04' => 0.5,
+                'g_05' => -0.5,
+                'g_06' => false,
+                'g_07' => FALSE,
+                'g_08' => true,
+                'g_09' => TRUE,
+                'g_10' => Array(),
+                'g_11' => new stdClass(),
+        ),
+
+        'h' => array(
+                0 => 0,
+                1 => 1,
+                2 => array(
+                        2 => 2,
+                        3 => 3,
+                ),
         ),
 
 //////////////////////////////////    REPEAT    //////////////////////////////////
 
         'h' => array(
-        
                 'a' => '',
-                'b' => array(),
-                
-                'c' => 'c second',
+                'b' => 'b second',
+                'c' => array(),
 
                 'd' => array(
                         'd_1' => 'd_1 second',
@@ -71,15 +78,26 @@ $array = array (
                 ),
 
                 'g' => array(
-                        'g_1' => 0,
-                        'g_2' => -1,
-                        'g_3' => 1,
-                        'g_4' => false,
-                        'g_5' => FALSE,
-                        'g_6' => true,
-                        'g_7' => TRUE,
-                        'g_8' => Array(),
-                        'g_9' => new stdClass(),
+                        'g_01' => 0,
+                        'g_02' => -1,
+                        'g_03' => 1,
+                        'g_04' => 0.5,
+                        'g_05' => -0.5,
+                        'g_06' => false,
+                        'g_07' => FALSE,
+                        'g_08' => true,
+                        'g_09' => TRUE,
+                        'g_10' => Array(),
+                        'g_11' => new stdClass(),
+                ),
+
+                'h' => array(
+                        0 => 0,
+                        1 => 1,
+                        2 => array(
+                                2 => 2,
+                                3 => 3,
+                        ),
                 ),
         ),
 );
