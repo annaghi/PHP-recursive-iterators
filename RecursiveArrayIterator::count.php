@@ -9,12 +9,14 @@ function countTest() {
             'a' => new stdClass(),
 
             'b' => array(
-                    'b_1' => 'b_1 text',
+                    'b_1' => new stdClass(),
                     'b_2' => 'b_2 text',
             ),
 
             'c' => array(
-                    'c_1' => new stdClass(),
+                    'c_1'=> array(
+                            'c_1_1' => 'c_1_1 text',
+                    ),
                     'c_2' => array(
                             'c_2_1' => 'c_2_1 text',
                             'c_2_2' => 'c_2_2 text',
@@ -103,7 +105,10 @@ stdClass Object
 
     [b] => stdClass Object
         (
-            [b_1] => b_1 text
+            [b_1] => stdClass Object
+                (
+                )
+
             [b_2] => b_2 text
         )
 
@@ -122,5 +127,4 @@ stdClass Object
                 )
         )
 )
-
 
