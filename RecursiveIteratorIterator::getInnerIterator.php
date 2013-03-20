@@ -26,8 +26,8 @@ function getInnerIteratorTest() {
 
 
 
-    $object   = json_decode( json_encode( $array ));
-//**    $object   = new ArrayObject( $array, 0, "RecursiveArrayIterator" );
+    $object = json_decode( json_encode( $array ));
+//**    $object = new ArrayObject( $array, 0, "RecursiveArrayIterator" );
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
