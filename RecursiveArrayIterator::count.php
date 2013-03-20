@@ -6,30 +6,20 @@ function countTest() {
 
     $array = array (
 
-            'a' => 'a first',
+            'a' => new stdClass(),
+
             'b' => array(
-                    'b_1' => 'b_1 first',
+                    'b_1' => 'b_1 text',
+                    'b_2' => 'b_2 text',
             ),
+
             'c' => array(
-                    'c_1' => 'c_1 first',
-                    'c_2' => 'c_2 first',
-            ),
-            'd' => array(
-                    'd_1' => new stdClass(),
-            ),
-
-            'e' => array(
-
-                    'a' => 'a second',
-                    'b' => array(
-                            'b_1' => 'b_1 second',
+                    'c_1' => array(
+                            'c_1_1' => 'c_1_1 text',
                     ),
-                    'c' => array(
-                            'c_1' => 'c_1 second',
-                            'c_2' => 'c_2 second',
-                    ),
-                    'd' => array(
-                            'd_1' => array(),
+                    'c_2' => array(
+                            'c_2_1' => 'c_2_1 text',
+                            'c_2_2' => 'c_2_2 text',
                     ),
             ),
     );
@@ -81,44 +71,27 @@ countTest();
 
 stdClass Object
 (
-    [a] => a first
+    [a] => stdClass Object
+        (
+        )
+
     [b] => stdClass Object
         (
-            [b_1] => b_1 first
+            [b_1] => b_1 text
+            [b_2] => b_2 text
         )
 
     [c] => stdClass Object
         (
-            [c_1] => c_1 first
-            [c_2] => c_2 first
-        )
-
-    [d] => stdClass Object
-        (
-            [d_1] => stdClass Object
+            [c_1] => stdClass Object
                 (
-                )
-        )
-
-    [e] => stdClass Object
-        (
-            [a] => a first
-            [b] => stdClass Object
-                (
-                    [b_1] => b_1 second
+                    [c_1_1] => c_1_1 text
                 )
 
-            [c] => stdClass Object
+            [c_2] => stdClass Object
                 (
-                    [c_1] => c_1 second
-                    [c_2] => c_2 second
-                )
-
-            [d] => stdClass Object
-                (
-                    [d_1] => Array
-                        (
-                        )
+                    [c_2_1] => c_2_1 text
+                    [c_2_2] => c_2_2 text
                 )
         )
 )
@@ -127,46 +100,28 @@ stdClass Object
 
 stdClass Object
 (
-    [a] => a first
+    [a] => stdClass Object
+        (
+        )
+
     [b] => stdClass Object
         (
-            [b_1] => b_1 first
+            [b_1] => b_1 text
+            [b_2] => b_2 text
         )
 
     [c] => stdClass Object
         (
-            [c_1] => c_1 first
-            [c_2] => c_2 first
-            [new] => brand new item with brand new text
-        )
-
-    [d] => stdClass Object
-        (
-            [d_1] => stdClass Object
+            [c_1] => stdClass Object
                 (
-                )
-        )
-
-    [e] => stdClass Object
-        (
-            [a] => a first
-            [b] => stdClass Object
-                (
-                    [b_1] => b_1 second
+                    [c_1_1] => c_1_1 text
+                    [new] => brand new leaf with brand new text
                 )
 
-            [c] => stdClass Object
+            [c_2] => stdClass Object
                 (
-                    [c_1] => c_1 second
-                    [c_2] => c_2 second
-                    [new] => brand new item with brand new text
-                )
-
-            [d] => stdClass Object
-                (
-                    [d_1] => Array
-                        (
-                        )
+                    [c_2_1] => c_2_1 text
+                    [c_2_2] => c_2_2 text
                 )
         )
 )
