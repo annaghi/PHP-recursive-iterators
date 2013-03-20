@@ -21,9 +21,7 @@ function getInnerIteratorTest() {
                             'c_2_1' => 'c_2_1 text',
                             'c_2_2' => 'c_2_2 text',
                     ),
-
             ),
-
     );
 
 
@@ -41,13 +39,13 @@ function getInnerIteratorTest() {
 
         if( $iterator->getInnerIterator()->count() == 2 ) {
 
-log_it($iterator->getInnerIterator());
+print_r($iterator->getInnerIterator());
 
         }
     }
 
 
-log_it('---------------------------------------------------------------------------------------------------------------------');
+print_r('---------------------------------------------------------------------------------------------------------------------');
 
 
     $iterator = new RecursiveIteratorIterator( new RecursiveArrayIterator( $object ), RecursiveIteratorIterator::SELF_FIRST );
@@ -56,7 +54,7 @@ log_it('------------------------------------------------------------------------
 
         if( $iterator->getInnerIterator()->count() == 2 ) {
 
-log_it($iterator->getInnerIterator());
+print_r($iterator->getInnerIterator());
 
         }
     }
