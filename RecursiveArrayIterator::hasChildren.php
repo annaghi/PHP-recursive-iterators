@@ -67,7 +67,7 @@ hasChildrenTest();
 
 
 
-/*
+/* Result
 
 stdClass Object
 (
@@ -110,6 +110,4 @@ stdClass Object
             [c_2] => NODE
         )
 )
-
-*/
 
