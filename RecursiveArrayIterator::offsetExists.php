@@ -4,40 +4,22 @@
 
 function offsetExistsTest() {
 
-     $array = array (
+    $array = array (
 
-            'a' => 'a first',
+            'a' => 'a text',
+
             'b' => array(
-                    'b_1' => 'b_1 first',
+                    'b_1' => 'b_1 text',
+                    'b_2' => 'b_2 text',
             ),
+
             'c' => array(
-                    'c_1' => 'c_1 first',
-                    'c_2' => 'c_2 first',
-            ),
-            'd' => array(
-                    'd_1' => array(
-                            'd_1_1' => 'd_1_1 first',
-                            'd_1_2' => 'd_1_2 first',
-                            'd_1_3' => 'd_1_3 first',
+                    'c_1' => array(
+                            'c_1_1' => 'c_1_1 text',
                     ),
-            ),
-
-            'e' => array(
-
-                    'a' => 'a second',
-                    'b' => array(
-                            'b_1' => 'b_1 second',
-                    ),
-                    'c' => array(
-                            'c_1' => 'c_1 second',
-                            'c_2' => 'c_2 second',
-                    ),
-                    'd' => array(
-                            'd_1' => array(
-                                    'd_1_1' => 'd_1_1 second',
-                                    'd_1_2' => 'd_1_2 second',
-                                    'd_1_3' => 'd_1_3 second',
-                            ),
+                    'c_2' => array(
+                            'c_2_1' => 'c_2_1 text',
+                            'c_2_2' => 'c_2_2 text',
                     ),
             ),
     );
@@ -75,66 +57,33 @@ offsetExistsTest();
 
 stdClass Object
 (
-    [a] => a first
+    [a] => a text
     [b] => stdClass Object
         (
-            [b_1] => b_1 first
-            [new] => new item with some new text
+            [b_1] => b_1 text
+            [b_2] => b_2 text
+            [new] => new leaf with some new text
         )
 
     [c] => stdClass Object
         (
-            [c_1] => c_1 first
-            [c_2] => c_2 first
-            [new] => new item with some new text
+            [c_1] => stdClass Object
+                (
+                    [c_1_1] => c_1_1 text
+                    [new] => new leaf with some new text
+                )
+
+            [c_2] => stdClass Object
+                (
+                    [c_2_1] => c_2_1 text
+                    [c_2_2] => c_2_2 text
+                    [new] => new leaf with some new text
+                )
+
+            [new] => new leaf with some new text
         )
 
-    [d] => stdClass Object
-        (
-            [d_1] => stdClass Object
-                (
-                    [d_1_1] => d_1_1 first
-                    [d_1_2] => d_1_2 first
-                    [d_1_3] => d_1_3 first
-                    [new] => new item with some new text
-                )
-
-            [new] => new item with some new text
-        )
-
-    [e] => stdClass Object
-        (
-            [a] => a second
-            [b] => stdClass Object
-                (
-                    [b_1] => b_1 second
-                    [new] => new item with some new text
-                )
-
-            [c] => stdClass Object
-                (
-                    [c_1] => c_1 second
-                    [c_2] => c_2 second
-                    [new] => new item with some new text
-                )
-
-            [d] => stdClass Object
-                (
-                    [d_1] => stdClass Object
-                        (
-                            [d_1_1] => d_1_1 second
-                            [d_1_2] => d_1_2 second
-                            [d_1_3] => d_1_3 second
-                            [new] => new item with some new text
-                        )
-
-                    [new] => new item with some new text
-                )
-
-            [new] => new item with some new text
-        )
-
-    [new] => new item with some new text
+    [new] => new leaf with some new text
 )
 
 */
