@@ -42,7 +42,7 @@ function getChildrenTest() {
 
             foreach( $iterator->getInnerIterator()->getChildren() as $child_key => $value ) {
 
-                $iterator->getInnerIterator()->getChildren()->offsetSet( $child_key, 'triplet' );
+                $iterator->getInnerIterator()->getChildren()->offsetSet( $child_key, 'trilling' );
             }
         }
     }
@@ -65,9 +65,9 @@ stdClass Object
     [a] => a text
     [b] => stdClass Object
         (
-            [b_1] => triplet
-            [b_2] => triplet
-            [b_3] => triplet
+            [b_1] => trilling
+            [b_2] => trilling
+            [b_3] => trilling
         )
 
     [c] => stdClass Object
