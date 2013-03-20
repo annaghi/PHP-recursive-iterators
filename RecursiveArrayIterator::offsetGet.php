@@ -6,42 +6,24 @@ function offsetGetTest() {
 
     $array = array (
 
-            'a' => 'a first',
+            'a' => 'a text',
+
             'b' => array(
-                    'b_1' => 'b_1 first',
+                    'b_1' => 'b_1 text',
+                    'b_2' => 'b_2 text',
             ),
+
             'c' => array(
-                    'c_1' => 'c_1 first',
-                    'c_2' => 'c_2 first',
-            ),
-            'd' => array(
-                    'd_1' => array(
-                            'd_1_1' => 'd_1_1 first',
-                            'd_1_2' => 'd_1_2 first',
-                            'd_1_3' => 'd_1_3 first',
+                    'c_1' => array(
+                            'c_1_1' => 'c_1_1 text',
                     ),
-            ),
-
-            'e' => array(
-
-                    'a' => 'a second',
-                    'b' => array(
-                            'b_1' => 'b_1 second',
-                    ),
-                    'c' => array(
-                            'c_1' => 'c_1 second',
-                            'c_2' => 'c_2 second',
-                    ),
-                    'd' => array(
-                            'd_1' => array(
-                                    'd_1_1' => 'd_1_1 second',
-                                    'd_1_2' => 'd_1_2 second',
-                                    'd_1_3' => 'd_1_3 second',
-                            ),
+                    'c_2' => array(
+                            'c_2_1' => 'c_2_1 text',
+                            'c_2_2' => 'c_2_2 text',
                     ),
             ),
     );
-
+    
 
 
     $object   = json_decode( json_encode( $array ));
@@ -56,13 +38,13 @@ function offsetGetTest() {
 
     foreach( $iterator as $key => $current ) {
 
-        if( $key == 'b_1' ) {
+        if( $key == 'a' ) {
 
             $value = $iterator->getInnerIterator()->offsetGet( $key );
             $iterator->getInnerIterator()->offsetUnset( $key );
         }
 
-        if( $key == 'd_1_3' ) {
+        if( $key == 'c_1_1' ) {
 
             $iterator->getInnerIterator()->offsetSet( $key, $value );
         }
@@ -83,48 +65,23 @@ offsetGetTest();
 
 stdClass Object
 (
-    [a] => a first
     [b] => stdClass Object
         (
+            [b_1] => b_1 text
+            [b_2] => b_2 text
         )
 
     [c] => stdClass Object
         (
-            [c_1] => c_1 first
-            [c_2] => c_2 first
-        )
-
-    [d] => stdClass Object
-        (
-            [d_1] => stdClass Object
+            [c_1] => stdClass Object
                 (
-                    [d_1_1] => d_1_1 first
-                    [d_1_2] => d_1_2 first
-                    [d_1_3] => b_1 first
-                )
-        )
-
-    [e] => stdClass Object
-        (
-            [a] => a second
-            [b] => stdClass Object
-                (
+                    [c_1_1] => a text
                 )
 
-            [c] => stdClass Object
+            [c_2] => stdClass Object
                 (
-                    [c_1] => c_1 second
-                    [c_2] => c_2 second
-                )
-
-            [d] => stdClass Object
-                (
-                    [d_1] => stdClass Object
-                        (
-                            [d_1_1] => d_1_1 second
-                            [d_1_2] => d_1_2 second
-                            [d_1_3] => b_1 second
-                        )
+                    [c_2_1] => c_2_1 text
+                    [c_2_2] => c_2_2 text
                 )
         )
 )
