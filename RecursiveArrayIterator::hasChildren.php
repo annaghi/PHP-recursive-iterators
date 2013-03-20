@@ -26,12 +26,10 @@ function hasChildrenTest() {
 
 
 
+    $iterator = new RecursiveIteratorIterator( new RecursiveArrayIterator( $array ), RecursiveIteratorIterator::CHILD_FIRST );
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-    $object   = json_decode( json_encode( $array ));
-//**    $object   = new ArrayObject( $array, 0, "RecursiveArrayIterator" );
-    $iterator = new RecursiveIteratorIterator( new RecursiveArrayIterator( $object ), RecursiveIteratorIterator::CHILD_FIRST );
 
 
     foreach( $iterator as $key => $current ) {
