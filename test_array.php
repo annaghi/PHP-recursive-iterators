@@ -5,8 +5,9 @@
 
 $array = array (
         'a' => '',
-        'b' => 'b first',
-        'c' => array(),
+        'b' => array(),
+        
+        'c' => 'c first',
 
         'd' => array(
                 'd_1' => 'd_1 first',
@@ -57,8 +58,9 @@ $array = array (
 
         'h' => array(
                 'a' => '',
-                'b' => 'b second',
-                'c' => array(),
+                'b' => array(),
+                
+                'c' => 'c second',
 
                 'd' => array(
                         'd_1' => 'd_1 second',
