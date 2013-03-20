@@ -2,7 +2,7 @@
 
 //A simple use case of RecursiveIteratorIterator::getSubIterator method
 
-function getDepthTest() {
+function getSubIteratorTest() {
 
     $array = array (
 
@@ -54,7 +54,7 @@ print_r($path);
 
 }
 
-getDepthTest();
+getSubIteratorTest();
 
 
 
