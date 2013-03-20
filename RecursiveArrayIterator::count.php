@@ -14,9 +14,7 @@ function countTest() {
             ),
 
             'c' => array(
-                    'c_1' => array(
-                            'c_1_1' => 'c_1_1 text',
-                    ),
+                    'c_1' => 'c_1' => new stdClass(),
                     'c_2' => array(
                             'c_2_1' => 'c_2_1 text',
                             'c_2_2' => 'c_2_2 text',
@@ -85,7 +83,6 @@ stdClass Object
         (
             [c_1] => stdClass Object
                 (
-                    [c_1_1] => c_1_1 text
                 )
 
             [c_2] => stdClass Object
