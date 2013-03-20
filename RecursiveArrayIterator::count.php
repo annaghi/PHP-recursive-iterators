@@ -27,7 +27,7 @@ function countTest() {
 
 
     $object   = json_decode( json_encode( $array ));    // in case of array with associative keys
-//--    $object   = array_to_object( $array );          // in case of array with numeric and/or associative keys
+//++    $object   = array_to_object( $array );          // in case of array with numeric and/or associative keys
 //**    $object   = new ArrayObject( $array, 0, "RecursiveArrayIterator" );
     $iterator = new RecursiveIteratorIterator( new RecursiveArrayIterator( $object ), RecursiveIteratorIterator::SELF_FIRST );
     
