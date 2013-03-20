@@ -40,7 +40,9 @@ function iteratorMethodChainingTest() {
 
             foreach( $iterator->getInnerIterator()->getChildren() as $key => $value ) {
 
-                if( $iterator->getInnerIterator()->getChildren()->hasChildren() && $iterator->getInnerIterator()->getChildren()->getChildren()->count() == 1 ) {
+                if( $iterator->getInnerIterator()->getChildren()->hasChildren()
+                      &&
+                    $iterator->getInnerIterator()->getChildren()->getChildren()->count() == 1 ) {
 
                     foreach( $iterator->getInnerIterator()->getChildren()->getChildren() as $key => $value ) {
 
