@@ -67,7 +67,7 @@ offsetSetTest();
 
 
 
-/*
+/* Result
 
 stdClass Object
 (
@@ -120,6 +120,4 @@ stdClass Object
                 )
         )
 )
-
-*/
 
