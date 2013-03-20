@@ -48,7 +48,7 @@ function countTest() {
 
         if( $iterator->getInnerIterator()->count() == 0 ) {
 
-            $iterator->getInnerIterator()->offsetSet( 'not_empty', 'this item is not empty anymore' );
+            $iterator->getInnerIterator()->offsetSet( 'not_empty', 'this node is not empty anymore' );
         }
     }
 
