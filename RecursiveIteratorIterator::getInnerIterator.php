@@ -70,7 +70,7 @@ getInnerIteratorTest();
 
 
 
-/*
+/* Result
 
 b_1
 RecursiveArrayIterator Object
@@ -197,6 +197,4 @@ RecursiveArrayIterator Object
             [c_2_2] => c_2_2 text
         )
 )
-
-*/
 
