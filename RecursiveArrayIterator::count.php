@@ -67,7 +67,7 @@ countTest();
 
 
 
-/*
+/* Result
 
 stdClass Object
 (
@@ -126,5 +126,4 @@ stdClass Object
         )
 )
 
-*/
 
