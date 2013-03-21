@@ -83,7 +83,7 @@ $array = array (
 
 
         // extreme items:
-        'e' => array(
+        'i_e' => array(
                 'e_01' => 0,
                 'e_02' => -1,
                 'e_03' => 1,
@@ -180,7 +180,7 @@ $array = array (
 
 
                 // extreme items:
-                'e' => array(
+                'i_e' => array(
                         'e_01' => 0,
                         'e_02' => -1,
                         'e_03' => 1,
