@@ -45,8 +45,6 @@ function offsetSetArrayTest() {
 
 
             $iterator->getInnerIterator()->getChildren()->offsetSet( 'new', array( 'wow' => 'cool!' ));
-
-            $iterator->getInnerIterator()->getChildren()->offsetUnset( $iterator->getInnerIterator()->getChildren()->key() );
         }
     }
 
@@ -83,6 +81,7 @@ stdClass Object
         (
             [c_1] => stdClass Object
                 (
+                    [c_1_1] => c_1_1 text
                     [new] => Array
                         (
                             [wow] => cool!
@@ -96,8 +95,6 @@ stdClass Object
                     [c_2_2] => c_2_2 text
                     [c_2_3] => c_2_3 text
                 )
-
         )
-
 )
 
