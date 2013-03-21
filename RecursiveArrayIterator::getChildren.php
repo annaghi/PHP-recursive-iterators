@@ -11,7 +11,6 @@ function getChildrenTest() {
             'b' => array(
                     'b_1' => 'b_1 text',
                     'b_2' => 'b_2 text',
-                    'b_3' => 'b_3 text',
             ),
 
             'c' => array(
@@ -21,6 +20,7 @@ function getChildrenTest() {
                     'c_2' => array(
                             'c_2_1' => 'c_2_1 text',
                             'c_2_2' => 'c_2_2 text',
+                            'c_2_3' => 'c_2_3 text',
                     ),
             ),
     );
@@ -65,9 +65,8 @@ stdClass Object
     [a] => a text
     [b] => stdClass Object
         (
-            [b_1] => trilling
-            [b_2] => trilling
-            [b_3] => trilling
+            [b_1] => b_1 text
+            [b_2] => b_2 text
         )
 
     [c] => stdClass Object
@@ -79,8 +78,9 @@ stdClass Object
 
             [c_2] => stdClass Object
                 (
-                    [c_2_1] => c_2_1 text
-                    [c_2_2] => c_2_2 text
+                    [c_2_1] => trilling
+                    [c_2_2] => trilling
+                    [c_2_3] => trilling
                 )
         )
 )
