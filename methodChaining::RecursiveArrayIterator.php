@@ -12,7 +12,7 @@ function insertSingle( $iterator ) {
 
                     foreach( $iterator->getChildren()->getChildren() as $key => $value ) {
 
-                        $iterator->getChildren()->getChildren()->offsetSet( $key, 'single there' );
+                        $iterator->getChildren()->getChildren()->offsetSet( $key, 'single grandchild' );
                     }
                 }
             }
@@ -36,8 +36,6 @@ function methodChainingTest() {
 
             'b' => array(
                     'b_1' => 'b_1 text',
-                    'b_2' => 'b_2 text',
-                    'b_3' => 'b_3 text',
             ),
 
             'c' => array(
@@ -79,15 +77,13 @@ stdClass Object
     [b] => stdClass Object
         (
             [b_1] => b_1 text
-            [b_2] => b_2 text
-            [b_3] => b_3 text
         )
 
     [c] => stdClass Object
         (
             [c_1] => stdClass Object
                 (
-                    [c_1_1] => single there
+                    [c_1_1] => single grandchild
                 )
 
             [c_2] => stdClass Object
