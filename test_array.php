@@ -29,23 +29,8 @@ $array = array (
                 ),
         ),
 
-        'g' => array(
-                'g_01' => 0,
-                'g_02' => -1,
-                'g_03' => 1,
-                'g_04' => 0.5,
-                'g_05' => -0.5,
-                'g_06' => false,
-                'g_07' => FALSE,
-                'g_08' => true,
-                'g_09' => TRUE,
-                'g_10' => null,
-                'g_11' => NULL,
-                'g_12' => Array(),
-                'g_13' => new stdClass(),
-        ),
 
-        'h' => array(
+        'g' => array(
                 0 => 0,
                 1 => 1,
 
@@ -70,29 +55,46 @@ $array = array (
                 ),
         ),
 
-        'i' => array(
-                0 => 'i 0 first',
-                1 => 'i 1 first',
+        'h' => array(
+                0 => 'h 0 first',
+                1 => 'h 1 first',
 
                 2 => array(
-                        1 => 'i 2 1 first',
+                        1 => 'h 2 1 first',
                 ),
 
                 3 => array(
-                        3 => 'i 3 3 first',
-                        4 => 'i 3 4 first',
+                        3 => 'h 3 3 first',
+                        4 => 'h 3 4 first',
                 ),
 
                 4 => array(
                         5 => array(
-                                0 => 'i 4 5 0 first',
+                                0 => 'h 4 5 0 first',
 
                         ),
                         7 => array(
-                                8 => 'i 4 7 8 first',
-                                6 => 'i 4 7 6 first',
+                                8 => 'h 4 7 8 first',
+                                6 => 'h 4 7 6 first',
                         ),
                 ),
+        ),
+
+        // extreme items:
+        'e' => array(
+                'e_01' => 0,
+                'e_02' => -1,
+                'e_03' => 1,
+                'e_04' => 0.5,
+                'e_05' => -0.5,
+                'e_06' => false,
+                'e_07' => FALSE,
+                'e_08' => true,
+                'e_09' => TRUE,
+                'e_10' => null,
+                'e_11' => NULL,
+                'e_12' => Array(),
+                'e_13' => new stdClass(),
         ),
 
 //////////////////////////////////    REPEAT    //////////////////////////////////
@@ -123,22 +125,6 @@ $array = array (
                 ),
 
                 'g' => array(
-                        'g_01' => 0,
-                        'g_02' => -1,
-                        'g_03' => 1,
-                        'g_04' => 0.5,
-                        'g_05' => -0.5,
-                        'g_06' => false,
-                        'g_07' => FALSE,
-                        'g_08' => true,
-                        'g_09' => TRUE,
-                        'g_10' => null,
-                        'g_11' => NULL,
-                        'g_12' => Array(),
-                        'g_13' => new stdClass(),
-                ),
-
-                'h' => array(
                         0 => 0,
                         1 => 1,
 
@@ -163,29 +149,46 @@ $array = array (
                         ),
                 ),
 
-                'i' => array(
-                        0 => 'i 0 second',
-                        1 => 'i 1 second',
+                'h' => array(
+                        0 => 'h 0 second',
+                        1 => 'h 1 second',
 
                         2 => array(
-                                1 => 'i 2 1 second',
+                                1 => 'h 2 1 second',
                         ),
 
                         3 => array(
-                                3 => 'i 3 3 second',
-                                4 => 'i 3 4 second',
+                                3 => 'h 3 3 second',
+                                4 => 'h 3 4 second',
                         ),
 
                         4 => array(
                                 5 => array(
-                                        0 => 'i 4 5 0 second',
+                                        0 => 'h 4 5 0 second',
 
                                 ),
                                 7 => array(
-                                        8 => 'i 4 7 8 second',
-                                        6 => 'i 4 7 6 second',
+                                        8 => 'h 4 7 8 second',
+                                        6 => 'h 4 7 6 second',
                                 ),
                         ),
+                ),
+
+                // extreme items:
+                'e' => array(
+                        'e_01' => 0,
+                        'e_02' => -1,
+                        'e_03' => 1,
+                        'e_04' => 0.5,
+                        'e_05' => -0.5,
+                        'e_06' => false,
+                        'e_07' => FALSE,
+                        'e_08' => true,
+                        'e_09' => TRUE,
+                        'e_10' => null,
+                        'e_11' => NULL,
+                        'e_12' => Array(),
+                        'e_13' => new stdClass(),
                 ),
         ),
 );
