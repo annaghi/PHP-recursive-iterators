@@ -1,11 +1,12 @@
 <?php
 
 function array_to_object( $array ) {
-    if( is_array( $array )) {
-        return (object) array_map( __FUNCTION__, $array );
+    
+    $object = new stdClass();
+
+    foreach( $array as $key => $value ) {
+        $object->$key = is_array( $value ) ? array_to_object( $value ) : $value;
     }
-    else {
-        return $array;
-    }
+    return $object;
 }
 
