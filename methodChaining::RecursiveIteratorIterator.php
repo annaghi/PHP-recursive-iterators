@@ -1,6 +1,6 @@
 <?php
 
-function iteratorMethodChainingTest() {
+function findSingleGrandchildTest() {
 
     $array = array (
 
@@ -58,7 +58,7 @@ print_r($object);
 
 }
 
-iteratorMethodChainingTest();
+findSingleGrandchildTest();
 
 
 
