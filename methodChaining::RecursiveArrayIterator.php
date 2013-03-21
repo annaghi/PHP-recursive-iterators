@@ -1,6 +1,6 @@
 <?php
 
-function insertSingle( $iterator ) {
+function findSingleGrandchild( $iterator ) {
 
     while( $iterator->valid() ) {
 
@@ -19,7 +19,7 @@ function insertSingle( $iterator ) {
         }
 
         if( $iterator->hasChildren() ) {
-            insertSingle( $iterator->getChildren() );
+            findSingleGrandchild( $iterator->getChildren() );
         }
 
         $iterator->next();
@@ -55,7 +55,7 @@ function methodChainingTest() {
     $iterator = new RecursiveArrayIterator( $object );
 
 
-    iterator_apply( $iterator, 'insertSingle', array( $iterator, ));
+    iterator_apply( $iterator, 'findSingleGrandchild', array( $iterator, ));
 
 
 print_r($object);
