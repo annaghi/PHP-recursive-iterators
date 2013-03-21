@@ -41,7 +41,7 @@ function offsetSetArrayTest() {
             $iterator->getInnerIterator()->getChildren()->key() != 'new'
               &&
             $iterator->getInnerIterator()->getChildren()->count() == 1
-           ) {
+          ) {
 
 
             $iterator->getInnerIterator()->getChildren()->offsetSet( 'new', array( 'wow' => 'cool!' ));
