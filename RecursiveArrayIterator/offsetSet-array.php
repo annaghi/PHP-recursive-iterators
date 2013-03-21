@@ -62,7 +62,7 @@ offsetSetArrayTest();
 /* Warning
 
 http://www.php.net/manual/en/arrayiterator.offsetset.php
-Description: public void ArrayIterator::offsetSet ( string $index , STRING $newval )
+Description: public void ArrayIterator::offsetSet ( string $index , string(!) $newval )
 
 
 
