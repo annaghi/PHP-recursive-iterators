@@ -28,7 +28,7 @@ function findSingleGrandchild( $iterator ) {
 
 
 
-function methodChainingTest() {
+function findSingleGrandchildTest() {
 
     $array = array (
 
@@ -62,7 +62,7 @@ print_r($object);
 
 }
 
-methodChainingTest();
+findSingleGrandchildTest();
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
