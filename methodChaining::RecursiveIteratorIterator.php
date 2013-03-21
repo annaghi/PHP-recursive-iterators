@@ -8,8 +8,6 @@ function iteratorMethodChainingTest() {
 
             'b' => array(
                     'b_1' => 'b_1 text',
-                    'b_2' => 'b_2 text',
-                    'b_3' => 'b_3 text',
             ),
 
             'c' => array(
@@ -46,7 +44,7 @@ function iteratorMethodChainingTest() {
 
                     foreach( $iterator->getInnerIterator()->getChildren()->getChildren() as $key => $value ) {
 
-                        $iterator->getInnerIterator()->getChildren()->getChildren()->offsetSet( $key, 'single here' );
+                        $iterator->getInnerIterator()->getChildren()->getChildren()->offsetSet( $key, 'single grandchild' );
                     }
                 }
             }
@@ -72,15 +70,13 @@ stdClass Object
     [b] => stdClass Object
         (
             [b_1] => b_1 text
-            [b_2] => b_2 text
-            [b_3] => b_3 text
         )
 
     [c] => stdClass Object
         (
             [c_1] => stdClass Object
                 (
-                    [c_1_1] => single here
+                    [c_1_1] => single grandchild
                 )
 
             [c_2] => stdClass Object
