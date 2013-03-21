@@ -86,7 +86,6 @@ stdClass Object
                         (
                             [wow] => cool!
                         )
-
                 )
 
             [c_2] => stdClass Object
