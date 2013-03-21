@@ -6,7 +6,7 @@
 $array = array (
         'a' => '',
         'b' => array(),
-        
+
         'c' => 'c first',
 
         'd' => array(
@@ -49,17 +49,60 @@ $array = array (
                 0 => 0,
                 1 => 1,
                 2 => array(
-                        3 => 3,
-                        4 => 4,
+                        2 => 22,
+                ),
+                3 => array(
+                        0 => array(
+                                0 => 300,
+                        ),
+                        1 => array(
+                                5 => 315,
+                                6 => 316,
+                        ),
+                ),
+                4 => array(
+                        2 => array(
+                                0 => 420,
+                        ),
+                        3 => array(
+                                7 => 437,
+                                8 => 438,
+                        ),
+                ),
+        ),
+
+        'i' => array(
+                0 => 'i 0 first',
+                1 => 'i 1 first',
+                2 => array(
+                        2 => 'i 2 2 first',
+                ),
+                3 => array(
+                        0 => array(
+                                0 => 'i 3 0 0 first',
+                        ),
+                        1 => array(
+                                5 => 'i 3 1 5 first',
+                                6 => 'i 3 1 6 first',
+                        ),
+                ),
+                4 => array(
+                        2 => array(
+                                0 => 'i 4 2 0 first',
+                        ),
+                        3 => array(
+                                7 => 'i 4 3 7 first',
+                                8 => 'i 4 3 8 first',
+                        ),
                 ),
         ),
 
 //////////////////////////////////    REPEAT    //////////////////////////////////
 
-        'i' => array(
+        'j' => array(
                 'a' => '',
                 'b' => array(),
-                
+
                 'c' => 'c second',
 
                 'd' => array(
@@ -101,8 +144,51 @@ $array = array (
                         0 => 0,
                         1 => 1,
                         2 => array(
-                                3 => 3,
-                                4 => 4,
+                                2 => 22,
+                        ),
+                        3 => array(
+                                0 => array(
+                                        0 => 300,
+                                ),
+                                1 => array(
+                                        5 => 315,
+                                        6 => 316,
+                                ),
+                        ),
+                        4 => array(
+                                2 => array(
+                                        0 => 420,
+                                ),
+                                3 => array(
+                                        7 => 437,
+                                        8 => 438,
+                                ),
+                        ),
+                ),
+
+                'i' => array(
+                        0 => 'i 0 second',
+                        1 => 'i 1 second',
+                        2 => array(
+                                2 => 'i 2 2 second',
+                        ),
+                        3 => array(
+                                0 => array(
+                                        0 => 'i 3 0 0 second',
+                                ),
+                                1 => array(
+                                        5 => 'i 3 1 5 second',
+                                        6 => 'i 3 1 6 second',
+                                ),
+                        ),
+                        4 => array(
+                                2 => array(
+                                        0 => 'i 4 2 0 second',
+                                ),
+                                3 => array(
+                                        7 => 'i 4 3 7 second',
+                                        8 => 'i 4 3 8 second',
+                                ),
                         ),
                 ),
         ),
