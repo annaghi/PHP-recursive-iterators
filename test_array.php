@@ -48,25 +48,24 @@ $array = array (
         'h' => array(
                 0 => 0,
                 1 => 1,
+
                 2 => array(
-                        2 => 22,
+                        1 => 21,
                 ),
+
                 3 => array(
-                        0 => array(
-                                0 => 300,
-                        ),
-                        1 => array(
-                                5 => 315,
-                                6 => 316,
-                        ),
+                        3 => 33,
+                        4 => 34,
                 ),
+
                 4 => array(
-                        2 => array(
-                                0 => 420,
+                        5 => array(
+                                0 => 450,
+
                         ),
-                        3 => array(
-                                7 => 437,
-                                8 => 438,
+                        7 => array(
+                                8 => 478,
+                                6 => 476,
                         ),
                 ),
         ),
@@ -74,25 +73,24 @@ $array = array (
         'i' => array(
                 0 => 'i 0 first',
                 1 => 'i 1 first',
+
                 2 => array(
-                        2 => 'i 2 2 first',
+                        1 => 'i 2 1 first',
                 ),
+
                 3 => array(
-                        0 => array(
-                                0 => 'i 3 0 0 first',
-                        ),
-                        1 => array(
-                                5 => 'i 3 1 5 first',
-                                6 => 'i 3 1 6 first',
-                        ),
+                        3 => 'i 3 3 first',
+                        4 => 'i 3 4 first',
                 ),
+
                 4 => array(
-                        2 => array(
-                                0 => 'i 4 2 0 first',
+                        5 => array(
+                                0 => 'i 4 5 0 first',
+
                         ),
-                        3 => array(
-                                7 => 'i 4 3 7 first',
-                                8 => 'i 4 3 8 first',
+                        7 => array(
+                                8 => 'i 4 7 8 first',
+                                6 => 'i 4 7 6 first',
                         ),
                 ),
         ),
@@ -143,25 +141,24 @@ $array = array (
                 'h' => array(
                         0 => 0,
                         1 => 1,
+
                         2 => array(
-                                2 => 22,
+                                1 => 21,
                         ),
+
                         3 => array(
-                                0 => array(
-                                        0 => 300,
-                                ),
-                                1 => array(
-                                        5 => 315,
-                                        6 => 316,
-                                ),
+                                3 => 33,
+                                4 => 34,
                         ),
+
                         4 => array(
-                                2 => array(
-                                        0 => 420,
+                                5 => array(
+                                        0 => 450,
+
                                 ),
-                                3 => array(
-                                        7 => 437,
-                                        8 => 438,
+                                7 => array(
+                                        8 => 478,
+                                        6 => 476,
                                 ),
                         ),
                 ),
@@ -169,25 +166,24 @@ $array = array (
                 'i' => array(
                         0 => 'i 0 second',
                         1 => 'i 1 second',
+
                         2 => array(
-                                2 => 'i 2 2 second',
+                                1 => 'i 2 1 second',
                         ),
+
                         3 => array(
-                                0 => array(
-                                        0 => 'i 3 0 0 second',
-                                ),
-                                1 => array(
-                                        5 => 'i 3 1 5 second',
-                                        6 => 'i 3 1 6 second',
-                                ),
+                                3 => 'i 3 3 second',
+                                4 => 'i 3 4 second',
                         ),
+
                         4 => array(
-                                2 => array(
-                                        0 => 'i 4 2 0 second',
+                                5 => array(
+                                        0 => 'i 4 5 0 second',
+
                                 ),
-                                3 => array(
-                                        7 => 'i 4 3 7 second',
-                                        8 => 'i 4 3 8 second',
+                                7 => array(
+                                        8 => 'i 4 7 8 second',
+                                        6 => 'i 4 7 6 second',
                                 ),
                         ),
                 ),
