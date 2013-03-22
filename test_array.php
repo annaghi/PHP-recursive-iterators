@@ -32,7 +32,7 @@ $array = array (
 
         'g' => array(
 
-                0,
+                '',
                 array(),
 
                 'num c first',
@@ -76,9 +76,25 @@ $array = array (
                 'e_13' => new stdClass(),
         ),
 
+        'i_e' => array(
+                0,
+                -1,
+                 1,
+                0.5,
+                -0.5,
+                false,
+                FALSE,
+                true,
+                TRUE,
+                null,
+                NULL,
+                Array(),
+                new stdClass(),
+        ),
+
 //////////////////////////////////    REPEAT    //////////////////////////////////
 
-        'i' => array(
+        'j' => array(
 
                 'a' => '',
                 'b' => array(),
@@ -106,7 +122,7 @@ $array = array (
 
                 'g' => array(
 
-                        0,
+                        '',
                         array(),
 
                         'num c second',
@@ -149,7 +165,22 @@ $array = array (
                         'e_12' => Array(),
                         'e_13' => new stdClass(),
                 ),
+
+                'i_e' => array(
+                        0,
+                        -1,
+                        1,
+                        0.5,
+                        -0.5,
+                        false,
+                        FALSE,
+                        true,
+                        TRUE,
+                        null,
+                        NULL,
+                        Array(),
+                        new stdClass(),
+                ),
         ),
 );
-
 
