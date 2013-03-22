@@ -4,7 +4,7 @@
 
 function offsetSetUnsetTest() {
 
-    $array = array (
+    $array = array(
 
             'a' => 'a text',
 

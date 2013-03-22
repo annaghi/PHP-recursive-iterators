@@ -4,7 +4,7 @@
 
 function countTest() {
 
-    $array = array (
+    $array = array(
 
             'a' => new stdClass(),
 
@@ -30,7 +30,7 @@ function countTest() {
 //++    $object   = array_to_object( $array );          // in case of array with numeric and/or associative keys
 //**    $object   = new ArrayObject( $array, 0, "RecursiveArrayIterator" );
     $iterator = new RecursiveIteratorIterator( new RecursiveArrayIterator( $object ), RecursiveIteratorIterator::SELF_FIRST );
-    
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

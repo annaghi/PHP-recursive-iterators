@@ -4,7 +4,7 @@
 
 function getChildrenTest() {
 
-    $array = array (
+    $array = array(
 
             'a' => 'a text',
 

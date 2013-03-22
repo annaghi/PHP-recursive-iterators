@@ -4,7 +4,7 @@
 
 function keyTest() {
 
-    $array = array (
+    $array = array(
 
             'a' => 'a text',
 

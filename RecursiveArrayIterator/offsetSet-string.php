@@ -4,7 +4,7 @@
 
 function offsetSetStringTest() {
 
-    $array = array (
+    $array = array(
 
             'a' => 'a text',
 
@@ -23,7 +23,7 @@ function offsetSetStringTest() {
                     ),
             ),
     );
-    
+
 
 
     $object   = json_decode( json_encode( $array ));    // in case of array with associative keys

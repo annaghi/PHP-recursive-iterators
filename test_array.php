@@ -1,9 +1,10 @@
 <?php
 
-/* array for testing the recursive methods
+// array for testing the recursive methods
 
 
 $array = array (
+
         'a' => '',
         'b' => array(),
 
@@ -29,113 +30,37 @@ $array = array (
                 ),
         ),
 
-
         'g' => array(
-                0 => 0,
-                1 => 1,
 
-                2 => array(
-                        1 => 21,
+                0,
+                array(),
+
+                'num c first',
+
+                array(
+                        'num d_1 first',
                 ),
 
-                3 => array(
-                        3 => 33,
-                        4 => 34,
+                array(
+                        'num e_1 first',
+                        'num e_2 first',
                 ),
 
-                4 => array(
-                        5 => array(
-                                0 => 450,
-
+                array(
+                        array(
+                                'num f_1_1 first',
                         ),
-                        7 => array(
-                                8 => 478,
-                                6 => 476,
-                        ),
-                ),
-        ),
-
-
-        'h' => array(
-                0 => 'h 0 first',
-                1 => 'h 1 first',
-
-                2 => array(
-                        1 => 'h 2 1 first',
-                ),
-
-                3 => array(
-                        3 => 'h 3 3 first',
-                        4 => 'h 3 4 first',
-                ),
-
-                4 => array(
-                        5 => array(
-                                0 => 'h 4 5 0 first',
-
-                        ),
-                        7 => array(
-                                8 => 'h 4 7 8 first',
-                                6 => 'h 4 7 6 first',
+                        array(
+                                'num f_2_1 first',
+                                'num f_2_2 first',
                         ),
                 ),
         ),
 
-
-        'i' => array(
-                '0' => 0,
-                '1' => 1,
-
-                '2' => array(
-                        '1' => 21,
-                ),
-
-                '3' => array(
-                        '3' => 33,
-                        '4' => 34,
-                ),
-
-                '4' => array(
-                        '5' => array(
-                                '0' => 450,
-
-                        ),
-                        '7' => array(
-                                '8' => 478,
-                                '6' => 476,
-                        ),
-                ),
-        ),
-
-
-        'j' => array(
-                '0' => 'j 0 first',
-                '1' => 'j 1 first',
-
-                '2' => array(
-                        '1' => 'j 2 1 first',
-                ),
-
-                '3' => array(
-                        '3' => 'j 3 3 first',
-                        '4' => 'j 3 4 first',
-                ),
-
-                '4' => array(
-                        '5' => array(
-                                '0' => 'j 4 5 0 first',
-
-                        ),
-                        '7' => array(
-                                '8' => 'j 4 7 8 first',
-                                '6' => 'j 4 7 6 first',
-                        ),
-                ),
-        ),
 
 
         // extreme items:
-        'k_e' => array(
+        'h_e' => array(
                 'e_01' => 0,
                 'e_02' => -1,
                 'e_03' => 1,
@@ -153,7 +78,8 @@ $array = array (
 
 //////////////////////////////////    REPEAT    //////////////////////////////////
 
-        'l' => array(
+        'i' => array(
+
                 'a' => '',
                 'b' => array(),
 
@@ -178,113 +104,37 @@ $array = array (
                         ),
                 ),
 
-
                 'g' => array(
-                        0 => 0,
-                        1 => 1,
 
-                        2 => array(
-                                1 => 21,
+                        0,
+                        array(),
+
+                        'num c second',
+
+                        array(
+                                'num d_1 second',
                         ),
 
-                        3 => array(
-                                3 => 33,
-                                4 => 34,
+                        array(
+                                'num e_1 second',
+                                'num e_2 second',
                         ),
 
-                        4 => array(
-                                5 => array(
-                                        0 => 450,
-
+                        array(
+                                array(
+                                        'num f_1_1 second',
                                 ),
-                                7 => array(
-                                        8 => 478,
-                                        6 => 476,
-                                ),
-                        ),
-                ),
-
-
-                'h' => array(
-                        0 => 'h 0 second',
-                        1 => 'h 1 second',
-
-                        2 => array(
-                                1 => 'h 2 1 second',
-                        ),
-
-                        3 => array(
-                                3 => 'h 3 3 second',
-                                4 => 'h 3 4 second',
-                        ),
-
-                        4 => array(
-                                5 => array(
-                                        0 => 'h 4 5 0 second',
-
-                                ),
-                                7 => array(
-                                        8 => 'h 4 7 8 second',
-                                        6 => 'h 4 7 6 second',
+                                array(
+                                        'num f_2_1 second',
+                                        'num f_2_2 second',
                                 ),
                         ),
                 ),
 
-
-                'i' => array(
-                        '0' => 0,
-                        '1' => 1,
-
-                        '2' => array(
-                                '1' => 21,
-                        ),
-
-                        '3' => array(
-                                '3' => 33,
-                                '4' => 34,
-                        ),
-
-                        '4' => array(
-                                '5' => array(
-                                        '0' => 450,
-
-                                ),
-                                '7' => array(
-                                        '8' => 478,
-                                        '6' => 476,
-                                ),
-                        ),
-                ),
-
-
-                'j' => array(
-                        '0' => 'j 0 second',
-                        '1' => 'j 1 second',
-
-                        '2' => array(
-                                '1' => 'j 2 1 second',
-                        ),
-
-                        '3' => array(
-                                '3' => 'j 3 3 second',
-                                '4' => 'j 3 4 second',
-                        ),
-
-                        '4' => array(
-                                '5' => array(
-                                        '0' => 'j 4 5 0 second',
-
-                                ),
-                                '7' => array(
-                                        '8' => 'j 4 7 8 second',
-                                        '6' => 'j 4 7 6 second',
-                                ),
-                        ),
-                ),
 
 
                 // extreme items:
-                'k_e' => array(
+                'h_e' => array(
                         'e_01' => 0,
                         'e_02' => -1,
                         'e_03' => 1,

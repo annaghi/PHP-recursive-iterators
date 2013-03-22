@@ -4,7 +4,7 @@
 
 function offsetGetTest() {
 
-    $array = array (
+    $array = array(
 
             'a' => 'a text',
 
@@ -23,7 +23,7 @@ function offsetGetTest() {
                     ),
             ),
     );
-    
+
 
 
     $object   = json_decode( json_encode( $array ));    // in case of array with associative keys
@@ -42,7 +42,7 @@ function offsetGetTest() {
         if( $key == 'a' ) {
 
             $value = $iterator->getInnerIterator()->offsetGet( $key );
-            
+
             $iterator->getInnerIterator()->offsetUnset( $key );
         }
 

@@ -4,7 +4,7 @@
 
 function hasChildrenTest() {
 
-    $array = array (
+    $array = array(
 
             'a' => 'a text',
 
