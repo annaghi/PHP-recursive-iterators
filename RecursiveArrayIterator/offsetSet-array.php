@@ -38,13 +38,13 @@ function offsetSetArrayTest() {
 
         if( $iterator->getInnerIterator()->hasChildren()
               &&
-            $iterator->getInnerIterator()->getChildren()->key() != 'new'
+            $iterator->getInnerIterator()->getChildren()->key() != 'constant'
               &&
             $iterator->getInnerIterator()->getChildren()->count() == 1
           ) {
 
 
-            $iterator->getInnerIterator()->getChildren()->offsetSet( 'new', array( 'wow' => 'cool!' ));
+            $iterator->getInnerIterator()->getChildren()->offsetSet( 'constant', array( 'wow' => 'cool!' ));
         }
     }
 
@@ -82,7 +82,7 @@ stdClass Object
             [c_1] => stdClass Object
                 (
                     [c_1_1] => c_1_1 text
-                    [new] => Array
+                    [constant] => Array
                         (
                             [wow] => cool!
                         )
