@@ -39,7 +39,7 @@ function offsetSetUnsetTest() {
 
         if( in_array( $key, array( 'b_1', 'b_2', 'c_1', ))) {
 
-            $iterator->getInnerIterator()->offsetSet( $key, 'new value here' );
+            $iterator->getInnerIterator()->offsetSet( $key, 'will be removed' );
         }
     }
 
