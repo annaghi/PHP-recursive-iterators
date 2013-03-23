@@ -75,13 +75,13 @@ stdClass Object
     [a] => a text
     [b] => stdClass Object
         (
-            [b_1] => new value here
-            [b_2] => new value here
+            [b_1] => will be removed
+            [b_2] => will be removed
         )
 
     [c] => stdClass Object
         (
-            [c_1] => new value here
+            [c_1] => will be removed
             [c_2] => stdClass Object
                 (
                     [c_2_1] => c_2_1 text
@@ -97,7 +97,7 @@ stdClass Object
     [a] => a text
     [b] => stdClass Object
         (
-            [b_2] => new value here
+            [b_2] => will be removed
         )
 
     [c] => stdClass Object
