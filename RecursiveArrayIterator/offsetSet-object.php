@@ -2,7 +2,7 @@
 
 // Not too simple use case of RecursiveArrayIterator::offsetSet method
 
-function offsetSetArrayTest() {
+function offsetSetObjectTest() {
 
     $array = array(
             'a' => 'a text',
@@ -48,7 +48,7 @@ print_r($object);
     }
 }
 
-offsetSetArrayTest();
+offsetSetObjectTest();
 
 
 
