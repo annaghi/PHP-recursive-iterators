@@ -11,17 +11,6 @@ function offsetSetArrayTest() {
                     'b_1' => 'b_1 text',
                     'b_2' => 'b_2 text',
             ),
-
-            'c' => array(
-                    'c_1' => array(
-                            'c_1_1' => 'c_1_1 text',
-                    ),
-                    'c_2' => array(
-                            'c_2_1' => 'c_2_1 text',
-                            'c_2_2' => 'c_2_2 text',
-                            'c_2_3' => 'c_2_3 text',
-                    ),
-            ),
     );
 
 
@@ -31,28 +20,28 @@ function offsetSetArrayTest() {
     $iterator = new RecursiveIteratorIterator( new RecursiveArrayIterator( $object ), RecursiveIteratorIterator::CHILD_FIRST );
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
     foreach( $iterator as $key => $current ) {
 
-        if( $iterator->getInnerIterator()->hasChildren()
-              &&
-            $iterator->getInnerIterator()->getChildren()->key() != 'constant'
-              &&
-            $iterator->getInnerIterator()->getChildren()->count() == 1
-          ) {
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        if( $key == 'b_1' ) {
 
-            $iterator->getInnerIterator()->getChildren()->offsetSet( 'constant', array( 'wow' => 'cool!' ));
+            $iterator->getInnerIterator()->offsetSet( 'new', (object)array( 'wow' => 'cool!' ));
+
+print_r($object);
         }
-    }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        if( $key == 'wow' ) {
+
+            $iterator->getInnerIterator()->offsetSet( $key, 'really ' . $iterator->getInnerIterator()->offsetGet( $key ));
 
 print_r($object);
+        }
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    }
 }
 
 offsetSetArrayTest();
@@ -75,24 +64,25 @@ stdClass Object
         (
             [b_1] => b_1 text
             [b_2] => b_2 text
-        )
-
-    [c] => stdClass Object
-        (
-            [c_1] => stdClass Object
+            [new] => stdClass Object
                 (
-                    [c_1_1] => c_1_1 text
-                    [constant] => Array
-                        (
-                            [wow] => cool!
-                        )
+                    [wow] => cool!
                 )
+        )
+)
 
-            [c_2] => stdClass Object
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+stdClass Object
+(
+    [a] => a text
+    [b] => stdClass Object
+        (
+            [b_1] => b_1 text
+            [b_2] => b_2 text
+            [new] => stdClass Object
                 (
-                    [c_2_1] => c_2_1 text
-                    [c_2_2] => c_2_2 text
-                    [c_2_3] => c_2_3 text
+                    [wow] => really cool!
                 )
         )
 )
